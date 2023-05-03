@@ -16,7 +16,7 @@ public class Page implements Serializable {
     private String title;
     private ArrayList<String> body = new ArrayList();
     private HashSet<URL> childLinks = new HashSet<>();
-    private HashSet<URL> parentLinks = new HashSet();
+    private HashSet<URL> parentLinks = new HashSet<>();
     private Hashtable<String, ArrayList<Integer>> forwardIndex = new Hashtable(); // word -> positions
     // TODO: map wordId instead of word
 
@@ -108,7 +108,7 @@ public class Page implements Serializable {
     public String toString() {
         String result = "";
 
-//        result += "Page ID: " + pageId + "\n";
+        result += "Page ID: " + pageId + "\n";
         result += "Title: " + title + "\n";
         result += "URL: " + url + "\n";
         result += "Last modification date: " + lastModificationDate.toLocalDate().toString() + "\n";
@@ -117,40 +117,30 @@ public class Page implements Serializable {
 
 //        result += "Forward Index length: " + forwardIndex.size() + "\n";
         result += "Forward Index: [";
-        int j = 0;
         if (!forwardIndex.isEmpty()) {
             for (String word : forwardIndex.keySet()) {
-                if (j >= 10) {
-                    break;
-                }
                 result += "\"" + word + "\"" + ": " + forwardIndex.get(word).toString() + ", ";
-                j++;
             }
         }
         result += "]\n";
 
-        result += "Parent links length: " + parentLinks.size() + "\n";
-        result += "Parent links: [";
-        if (!parentLinks.isEmpty()) {
+        if (parentLinks != null) {
+            result += "Parent links length: " + parentLinks.size() + "\n";
+            result += "Parent links: [";
             for (URL parentLink : parentLinks) {
                 result += "\"" + parentLink.toString() + "\", ";
             }
+            result += "]\n";
         }
-        result += "]\n";
 
-        result += "Child links length: " + childLinks.size() + "\n";
-        result += "Child links: [";
-//        int i = 0;
-        if (!childLinks.isEmpty()) {
+        if (childLinks != null) {
+            result += "Child links length: " + childLinks.size() + "\n";
+            result += "Child links: [";
             for (URL childLink : childLinks) {
-//                if (i >= 10) {
-//                    break;
-//                }
                 result += "\"" + childLink.toString() + "\", ";
-//                i++;
             }
+            result += "]\n";
         }
-        result += "]\n";
 
         return result;
     }

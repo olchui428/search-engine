@@ -10,11 +10,13 @@ import project.utils.Porter;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class TestClass {
 
     @Test
-    public void testMain() {
+    public void testSpiderIndexer() {
         String testingURL = "https://cse.hkust.edu.hk/";
         int numPages = 30;
 
@@ -82,7 +84,8 @@ public class TestClass {
     public void testSearchEnginePhrase() throws IOException {
 //        String query = """
 //                To make the Robo-lawyer more like a real person, sentiment analysis has been employed to help identify true feelings and moods of a person heading to a divorce through the dialogue. When a user writes "I am glad", for instance, it should be interpreted as an expression of relief instead of being upbeat. It even makes effort to persuade couples to think twice before finally deciding to divorce. """;
-        String query = "\"hong kong\"";
+//        String query = "bitch \"hong kong\" hello \"nei ho\" bye";
+        String query = "\"mood modulat\"";
         int numPages = 30;
 
         DatabaseManager recmanPages = new DatabaseManager(TableName.PAGES);
@@ -99,20 +102,6 @@ public class TestClass {
         for (String s : result.keySet()) {
             System.out.println(((Page) recmanPages.get(s)).getTitle() + ": " + result.get(s));
         }
-    }
-
-    @Test
-    public void testStem() {
-        ArrayList<String> body = new ArrayList<>();
-        body.add("swimming");
-        body.add("swim");
-        body.add("swam");
-        body.add("swum");
-        for (String token : body) {
-            token = new Porter().stripAffixes(token);
-            System.out.println(token);
-        }
-        System.out.println(new Porter().stripAffixes("swimming"));
     }
 
     static public void testOutputToTxt(TableName tableName, String filepath) {

@@ -113,7 +113,6 @@ public class Term implements Serializable {
     }
 
     public void addPostingList(String pageId, ArrayList<Integer> positions) {
-        System.out.println("IN TERM: positions.size() = " + positions.size());
         postingList.add(new Posting(pageId, positions.size(), positions));
     }
 

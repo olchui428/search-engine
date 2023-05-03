@@ -114,18 +114,18 @@ public class Indexer {
             Hashtable<String, ArrayList<Integer>> forwardIndex = new Hashtable<>(); // word -> positions of word in page
             int position = 0;
             for (String str : stringArrayList) {
-                ArrayList<Integer> positions;
+//                ArrayList<Integer> positions;
                 // Term already exists in forwardIndex
-                if ((positions = forwardIndex.get(str)) != null) {
+                if (forwardIndex.get(str) != null) {
+                    ArrayList<Integer> positions = forwardIndex.get(str);
                     positions.add(position);
                     forwardIndex.put(str, positions);
                 } else {
-                    positions = new ArrayList<>();
+                    ArrayList<Integer> positions = new ArrayList<>();
                     positions.add(position);
                     forwardIndex.put(str, positions);
                 }
                 position++;
-//                System.out.println("str = " + str + ", position = " + position);
             }
 
             // Update forwardIndex of page (for body only)
