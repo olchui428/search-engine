@@ -114,7 +114,11 @@ public class SearchEngine {
 
                     // Compute document weight
                     double tf = (double) posting.getTf();
-                    double maxTf = Collections.max(page.getForwardIndex().values());
+                    double maxTf = 0;
+                    for (ArrayList<Integer> integers: page.getForwardIndex().values()) {
+                        maxTf = Math.max(maxTf, Collections.max(integers));
+                    }
+//                    double maxTf = Collections.max(page.getForwardIndex().values());
                     double df = ((Term) recmanInvBody.get(wordID)).getDf();
                     double idf = Math.log(numPages / df) / Math.log(2);
                     if (maxTf == 0) {

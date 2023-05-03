@@ -17,7 +17,7 @@ public class Page implements Serializable {
     private ArrayList<String> body = new ArrayList();
     private HashSet<URL> childLinks = new HashSet<>();
     private HashSet<URL> parentLinks = new HashSet();
-    private Hashtable<String, Integer> forwardIndex = new Hashtable(); // word -> tf
+    private Hashtable<String, ArrayList<Integer>> forwardIndex = new Hashtable(); // word -> positions
     // TODO: map wordId instead of word
 
     // Constructor
@@ -59,7 +59,7 @@ public class Page implements Serializable {
         return parentLinks;
     }
 
-    public Hashtable<String, Integer> getForwardIndex() {
+    public Hashtable<String, ArrayList<Integer>> getForwardIndex() {
         return forwardIndex;
     }
 
@@ -100,7 +100,7 @@ public class Page implements Serializable {
         this.childLinks = childLinks;
     }
 
-    public void setForwardIndex(Hashtable<String, Integer> forwardIndex) {
+    public void setForwardIndex(Hashtable<String, ArrayList<Integer>> forwardIndex) {
         this.forwardIndex = forwardIndex;
     }
 

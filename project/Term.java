@@ -7,17 +7,29 @@ import java.util.UUID;
 class Posting implements Serializable {
     static final long serialVersionUID = -1768459135542239720L;
 
-    String pageId;
-    int tf;
+    private String pageId;
+    private int tf;
+    private ArrayList<Integer> positions;
 
     Posting(String pageId, int tf) {
         this.pageId = pageId;
         this.tf = tf;
+        this.positions = new ArrayList<>();
+    }
+
+    Posting(String pageId, int tf, ArrayList<Integer> positions) {
+        this.pageId = pageId;
+        this.tf = tf;
+        this.positions = positions;
     }
 
     @Override
     public String toString() {
-        return String.format("(%s, %d)", pageId, tf);
+        return "Posting{" +
+                "pageId='" + pageId + '\'' +
+                ", tf=" + tf +
+                ", positions=" + positions +
+                '}';
     }
 
     public String getPageId() {
@@ -35,6 +47,19 @@ class Posting implements Serializable {
     public void setTf(int tf) {
         this.tf = tf;
     }
+
+    public ArrayList<Integer> getPositions() {
+        return positions;
+    }
+
+    public void setPositions(ArrayList<Integer> positions) {
+        this.positions = positions;
+    }
+
+    public void addPosition(Integer position) {
+        this.positions.add(position);
+    }
+
 }
 
 public class Term implements Serializable {
@@ -87,8 +112,9 @@ public class Term implements Serializable {
         this.postingList = postingList;
     }
 
-    public void addPostingList(String pageId, int tf) {
-        postingList.add(new Posting(pageId, tf));
+    public void addPostingList(String pageId, ArrayList<Integer> positions) {
+        System.out.println("IN TERM: positions.size() = " + positions.size());
+        postingList.add(new Posting(pageId, positions.size(), positions));
     }
 
     @Override

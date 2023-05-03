@@ -6,12 +6,11 @@ import org.json.JSONObject;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.ZoneOffset;
-import java.util.HashMap;
+import java.util.*;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.net.InetSocketAddress;
 import java.util.HashMap;
-import java.util.Map;
 
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
@@ -139,9 +138,15 @@ public class Server {
                 data.put("parentLinks", new JSONArray(page.getParentLinks()));
 
                 // forwardIndex (array)
-                Map<String, Integer> forwardIndex = project.Utils.sortMapDesc(page.getForwardIndex());
+                Hashtable<String, ArrayList<Integer>> forwardPositions = page.getForwardIndex();
+                Hashtable<String, Integer> forwardIndex = new Hashtable<>();
+                for (String word : forwardPositions.keySet()) {
+                    forwardIndex.put(word, forwardPositions.get(word).size());
+                }
+//                Map<String, Integer> forwardIndex = Utils.sortMapDesc(forwardIndex);
+//                Map<String, Integer> forwardIndex = project.Utils.sortMapDesc(page.getForwardIndex());
                 JSONArray forwardIndexJson = new JSONArray();
-                for (String word : forwardIndex.keySet()) {
+                for (String word : Utils.sortMapDesc(forwardIndex).keySet()) {
                     System.out.println("word = " + word + ", tf = " + forwardIndex.get(word));
                     JSONObject wordToTf = new JSONObject();
                     wordToTf.put("word", word);

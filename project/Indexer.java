@@ -111,15 +111,21 @@ public class Indexer {
         if (isBody) {
             // Temporary hashtable without word_id.
             // Processes and contains only terms info of this body batch.
-            Hashtable<String, Integer> forwardIndex = new Hashtable<>(); // word -> tf in page
+            Hashtable<String, ArrayList<Integer>> forwardIndex = new Hashtable<>(); // word -> positions of word in page
+            int position = 0;
             for (String str : stringArrayList) {
-                Integer i;
+                ArrayList<Integer> positions;
                 // Term already exists in forwardIndex
-                if ((i = forwardIndex.get(str)) != null) {
-                    forwardIndex.put(str, ++i);
+                if ((positions = forwardIndex.get(str)) != null) {
+                    positions.add(position);
+                    forwardIndex.put(str, positions);
                 } else {
-                    forwardIndex.put(str, 1);
+                    positions = new ArrayList<>();
+                    positions.add(position);
+                    forwardIndex.put(str, positions);
                 }
+                position++;
+//                System.out.println("str = " + str + ", position = " + position);
             }
 
             // Update forwardIndex of page (for body only)
@@ -130,9 +136,6 @@ public class Indexer {
             // Update invertedFileBody and termToID
             for (String word : forwardIndex.keySet()) {
                 String wordId = termToID.get(word);
-                // termtoid get = null: create
-                // invertedFile get = null: create
-
                 if (wordId == null) {
                     // Create new term in invertedFileBody and termToID
                     Term term = new Term(word);
@@ -161,23 +164,26 @@ public class Indexer {
 
             // Temporary hashtable without word_id.
             // Processes and contains only terms info of this body batch.
-            Hashtable<String, Integer> forwardIndex = new Hashtable<>(); // word -> tf in page
+            Hashtable<String, ArrayList<Integer>> forwardIndex = new Hashtable<>(); // word -> positions of word in page
+            int position = 0;
             for (String str : stringArrayList) {
-                Integer i;
+                ArrayList<Integer> positions;
                 // Term already exists in forwardIndex
-                if ((i = forwardIndex.get(str)) != null) {
-                    forwardIndex.put(str, ++i);
+                if ((positions = forwardIndex.get(str)) != null) {
+                    positions.add(position);
+                    forwardIndex.put(str, positions);
                 } else {
-                    forwardIndex.put(str, 1);
+                    positions = new ArrayList<>();
+                    positions.add(position);
+                    forwardIndex.put(str, positions);
                 }
+                position++;
+//                System.out.println("str = " + str + ", position = " + position);
             }
 
             // Update invertedFileTitle and termToID
             for (String word : forwardIndex.keySet()) {
                 String wordId = termToID.get(word);
-                // termtoid get = null: create
-                // invertedFile get = null: create
-
                 if (wordId == null) {
                     // Create new term in invertedFileTitle and termToID
                     Term term = new Term(word);
