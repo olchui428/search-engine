@@ -1,0 +1,32 @@
+===== Database: url_to_id =====
+
+https://cse.hkust.edu.hk/pg/research/projects/qianzh/als-p/: 5f7d3d03
+https://cse.hkust.edu.hk/News/events.html: 39b1868e
+https://cse.hkust.edu.hk/admin/people/faculty/: 105af579
+https://cse.hkust.edu.hk/admin/about/: b61739b8
+https://cse.hkust.edu.hk/#spotlight-slides: 49bb3d54
+https://cse.hkust.edu.hk/pg/research/projects/leichen/stc/: b6a10a68
+https://cse.hkust.edu.hk/Restricted/: 03c73f58
+https://cse.hkust.edu.hk/: 365100b9
+https://cse.hkust.edu.hk/pg/research/projects/horner/mmm/: 39e2d1c3
+https://cse.hkust.edu.hk/pg/: 6d92bf46
+https://cse.hkust.edu.hk/pg/research/projects/mxj/hri/: 5dcff988
+https://cse.hkust.edu.hk/pg/research/projects/lzhang/aipano/: 85957ee2
+https://cse.hkust.edu.hk/pg/research/projects/scc/castle/: 87238ded
+https://cse.hkust.edu.hk/pg/research/projects/gchan/lst/: 68881195
+https://cse.hkust.edu.hk/admin/people/pg/: b1b288a9
+https://cse.hkust.edu.hk/pg/research/projects/dipapado/sed/: a5a96dda
+https://cse.hkust.edu.hk/admin/search/: 18d2dce5
+https://cse.hkust.edu.hk/pg/admissions/: ebfdcd92
+https://cse.hkust.edu.hk/pg/research/projects/kaichen/fls/: f52d1b08
+https://www.facebook.com/hkust/: d4f47e36
+https://cse.hkust.edu.hk/pg/research/projects/dyyeung/ml-hko/: 9f8dd3ac
+https://cse.hkust.edu.hk/admin/sitemap/: f89a738d
+https://cse.hkust.edu.hk/admin/industry_collaboration/: 41df1113
+https://hkust.edu.hk/: ca24137b
+https://seng.hkust.edu.hk/news/20201117/prof-chen-kai-designs-next-generation-ai-computing-hub-and-sets-new-paradigm: b92bde60
+https://hkust.edu.hk/lifehkust: 6d66753d
+https://cse.hkust.edu.hk/News/RTF2023/press/: e56c75e6
+https://cse.hkust.edu.hk/pg/research/projects/yqsong/robo-lawyer/: fbeee284
+https://cse.hkust.edu.hk/pg/admissions/recruiting/: 67d177db
+https://seng.hkust.edu.hk/: 77043d0b

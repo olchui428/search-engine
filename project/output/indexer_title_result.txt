@@ -1,0 +1,522 @@
+===== Database: inverted_index_title =====
+
+Word id: d4e02b69
+Word: 2023
+Df: 2
+Posting list: (e56c75e6, 1), (67d177db, 1), 
+------------
+Word id: 309d2778
+Word: contract
+Df: 1
+Posting list: (fbeee284, 1), 
+------------
+Word id: 194d992c
+Word: via
+Df: 1
+Posting list: (5f7d3d03, 1), 
+------------
+Word id: fb99b063
+Word: system
+Df: 1
+Posting list: (f52d1b08, 1), 
+------------
+Word id: 77549e73
+Word: crowdsourc
+Df: 1
+Posting list: (b6a10a68, 1), 
+------------
+Word id: 568a6fc7
+Word: forum
+Df: 1
+Posting list: (e56c75e6, 1), 
+------------
+Word id: 0b0f0e43
+Word: univers
+Df: 2
+Posting list: (d4f47e36, 1), (ca24137b, 1), 
+------------
+Word id: c356a0ff
+Word: view
+Df: 1
+Posting list: (85957ee2, 1), 
+------------
+Word id: 71b366c2
+Word: program
+Df: 2
+Posting list: (6d66753d, 1), (6d92bf46, 1), 
+------------
+Word id: 63ef601a
+Word: inform
+Df: 1
+Posting list: (41df1113, 1), 
+------------
+Word id: 39ba094b
+Word: prof
+Df: 1
+Posting list: (b92bde60, 1), 
+------------
+Word id: a1bd086d
+Word: visibl
+Df: 1
+Posting list: (5f7d3d03, 1), 
+------------
+Word id: 521a58dd
+Word: robot
+Df: 1
+Posting list: (5dcff988, 1), 
+------------
+Word id: e3c95c9a
+Word: design
+Df: 1
+Posting list: (b92bde60, 1), 
+------------
+Word id: 89f10a22
+Word: robo
+Df: 1
+Posting list: (fbeee284, 1), 
+------------
+Word id: 44788eec
+Word: amp
+Df: 1
+Posting list: (41df1113, 1), 
+------------
+Word id: 07832d7f
+Word: interac
+Df: 1
+Posting list: (5dcff988, 1), 
+------------
+Word id: 942e31b6
+Word: kai
+Df: 1
+Posting list: (b92bde60, 1), 
+------------
+Word id: 5af2601e
+Word: admis
+Df: 1
+Posting list: (ebfdcd92, 1), 
+------------
+Word id: 367a90f7
+Word: abroad
+Df: 1
+Posting list: (6d66753d, 1), 
+------------
+Word id: 6dc97243
+Word: depart
+Df: 2
+Posting list: (365100b9, 1), (49bb3d54, 1), 
+------------
+Word id: f6fed741
+Word: event
+Df: 1
+Posting list: (39b1868e, 1), 
+------------
+Word id: 996183bc
+Word: nowcast
+Df: 1
+Posting list: (9f8dd3ac, 1), 
+------------
+Word id: a3763491
+Word: studi
+Df: 2
+Posting list: (ca24137b, 1), (6d66753d, 2), 
+------------
+Word id: d70dc40e
+Word: success
+Df: 1
+Posting list: (e56c75e6, 1), 
+------------
+Word id: e5484c15
+Word: code
+Df: 1
+Posting list: (87238ded, 1), 
+------------
+Word id: 43ae1452
+Word: precipit
+Df: 1
+Posting list: (9f8dd3ac, 1), 
+------------
+Word id: fbaa7852
+Word: comput
+Df: 3
+Posting list: (365100b9, 1), (49bb3d54, 1), (b92bde60, 1), 
+------------
+Word id: cccd391a
+Word: sensor
+Df: 1
+Posting list: (5f7d3d03, 1), 
+------------
+Word id: d75b7589
+Word: resound
+Df: 1
+Posting list: (e56c75e6, 1), 
+------------
+Word id: 1a99672d
+Word: research
+Df: 1
+Posting list: (e56c75e6, 1), 
+------------
+Word id: 72f6482f
+Word: toward
+Df: 1
+Posting list: (5dcff988, 1), 
+------------
+Word id: d1d81872
+Word: a
+Df: 1
+Posting list: (fbeee284, 1), 
+------------
+Word id: 324ac955
+Word: tempor
+Df: 1
+Posting list: (b6a10a68, 1), 
+------------
+Word id: 615a39c3
+Word: map
+Df: 1
+Posting list: (f89a738d, 1), 
+------------
+Word id: d6d77315
+Word: best
+Df: 1
+Posting list: (6d66753d, 1), 
+------------
+Word id: dc7e5db8
+Word: the
+Df: 1
+Posting list: (d4f47e36, 1), 
+------------
+Word id: 871182bd
+Word: spatial
+Df: 1
+Posting list: (b6a10a68, 1), 
+------------
+Word id: 29518cf3
+Word: feder
+Df: 1
+Posting list: (f52d1b08, 1), 
+------------
+Word id: 5399e369
+Word: position
+Df: 1
+Posting list: (5f7d3d03, 1), 
+------------
+Word id: 45905a93
+Word: industri
+Df: 1
+Posting list: (41df1113, 1), 
+------------
+Word id: 37900b7e
+Word: new
+Df: 1
+Posting list: (b92bde60, 1), 
+------------
+Word id: f7fa9c28
+Word: world
+Df: 1
+Posting list: (ca24137b, 1), 
+------------
+Word id: b23a2b46
+Word: machin
+Df: 1
+Posting list: (9f8dd3ac, 1), 
+------------
+Word id: d3344403
+Word: model
+Df: 1
+Posting list: (9f8dd3ac, 1), 
+------------
+Word id: 2e15b053
+Word: citi
+Df: 1
+Posting list: (68881195, 1), 
+------------
+Word id: 799bf374
+Word: profil
+Df: 1
+Posting list: (f52d1b08, 1), 
+------------
+Word id: c57c0c44
+Word: chatbot
+Df: 1
+Posting list: (fbeee284, 1), 
+------------
+Word id: 36b1b41b
+Word: panoram
+Df: 1
+Posting list: (85957ee2, 1), 
+------------
+Word id: 65aa61f4
+Word: vibrant
+Df: 1
+Posting list: (6d66753d, 1), 
+------------
+Word id: 28baba2c
+Word: music
+Df: 1
+Posting list: (39e2d1c3, 1), 
+------------
+Word id: bfff819e
+Word: hong
+Df: 3
+Posting list: (d4f47e36, 3), (ca24137b, 1), (6d66753d, 1), 
+------------
+Word id: 8c4c2dca
+Word: learn
+Df: 3
+Posting list: (87238ded, 1), (9f8dd3ac, 1), (f52d1b08, 1), 
+------------
+Word id: 5d744caa
+Word: about
+Df: 1
+Posting list: (b61739b8, 1), 
+------------
+Word id: 9f36480e
+Word: cse
+Df: 23
+Posting list: (85957ee2, 2), (18d2dce5, 1), (39b1868e, 1), (39e2d1c3, 1), (105af579, 1), (b61739b8, 2), (e56c75e6, 2), (fbeee284, 1), (f89a738d, 1), (87238ded, 1), (b1b288a9, 1), (b6a10a68, 1), (9f8dd3ac, 1), (03c73f58, 1), (f52d1b08, 1), (5dcff988, 1), (68881195, 1), (41df1113, 1), (ebfdcd92, 1), (67d177db, 1), (6d92bf46, 1), (5f7d3d03, 1), (a5a96dda, 1), 
+------------
+Word id: 7e8fbb78
+Word: test
+Df: 1
+Posting list: (87238ded, 1), 
+------------
+Word id: c4c875ef
+Word: employ
+Df: 1
+Posting list: (41df1113, 1), 
+------------
+Word id: 206c50dc
+Word: lawyer
+Df: 1
+Posting list: (fbeee284, 1), 
+------------
+Word id: 99e1bbd0
+Word: experi
+Df: 1
+Posting list: (6d66753d, 1), 
+------------
+Word id: 0cba6b81
+Word: chen
+Df: 1
+Posting list: (b92bde60, 1), 
+------------
+Word id: a8e39e09
+Word: recruit
+Df: 1
+Posting list: (67d177db, 1), 
+------------
+Word id: 8331f63c
+Word: paradigm
+Df: 1
+Posting list: (b92bde60, 1), 
+------------
+Word id: b6f98b96
+Word: ai
+Df: 1
+Posting list: (b92bde60, 1), 
+------------
+Word id: e5da2cbb
+Word: engin
+Df: 4
+Posting list: (77043d0b, 2), (365100b9, 1), (49bb3d54, 1), (b92bde60, 1), 
+------------
+Word id: 1770384f
+Word: technologi
+Df: 2
+Posting list: (d4f47e36, 1), (e56c75e6, 1), 
+------------
+Word id: 2dbd53af
+Word: intak
+Df: 1
+Posting list: (67d177db, 1), 
+------------
+Word id: 2dde444b
+Word: engag
+Df: 1
+Posting list: (5dcff988, 1), 
+------------
+Word id: 54914fbf
+Word: latest
+Df: 1
+Posting list: (39b1868e, 1), 
+------------
+Word id: 8866bc28
+Word: scienc
+Df: 3
+Posting list: (d4f47e36, 1), (365100b9, 1), (49bb3d54, 1), 
+------------
+Word id: b37620eb
+Word: indoor
+Df: 1
+Posting list: (5f7d3d03, 1), 
+------------
+Word id: 3d01d480
+Word: data
+Df: 1
+Posting list: (a5a96dda, 1), 
+------------
+Word id: 2a50f2c3
+Word: student
+Df: 2
+Posting list: (b1b288a9, 1), (67d177db, 1), 
+------------
+Word id: 6c360581
+Word: encrypt
+Df: 1
+Posting list: (a5a96dda, 1), 
+------------
+Word id: 29a681cf
+Word: local
+Df: 1
+Posting list: (5f7d3d03, 1), 
+------------
+Word id: 08d4e5f9
+Word: net
+Df: 1
+Posting list: (03c73f58, 1), 
+------------
+Word id: efac5e51
+Word: partner
+Df: 1
+Posting list: (41df1113, 1), 
+------------
+Word id: d95dfa1a
+Word: perform
+Df: 1
+Posting list: (f52d1b08, 1), 
+------------
+Word id: 37d5f240
+Word: spatiotempor
+Df: 1
+Posting list: (9f8dd3ac, 1), 
+------------
+Word id: bd0d072b
+Word: site
+Df: 2
+Posting list: (18d2dce5, 1), (f89a738d, 1), 
+------------
+Word id: 79bc957b
+Word: sens
+Df: 1
+Posting list: (68881195, 1), 
+------------
+Word id: 340cd2d0
+Word: ambient
+Df: 1
+Posting list: (5f7d3d03, 1), 
+------------
+Word id: 79df9b6a
+Word: search
+Df: 2
+Posting list: (18d2dce5, 1), (a5a96dda, 1), 
+------------
+Word id: 79f9a21f
+Word: hkust
+Df: 30
+Posting list: (77043d0b, 2), (d4f47e36, 1), (85957ee2, 2), (18d2dce5, 1), (39b1868e, 1), (39e2d1c3, 1), (105af579, 1), (365100b9, 1), (b61739b8, 1), (e56c75e6, 1), (fbeee284, 1), (f89a738d, 1), (87238ded, 1), (49bb3d54, 1), (b1b288a9, 1), (ca24137b, 1), (b6a10a68, 1), (9f8dd3ac, 1), (03c73f58, 1), (f52d1b08, 1), (5dcff988, 1), (68881195, 1), (b92bde60, 1), (41df1113, 1), (ebfdcd92, 1), (6d66753d, 1), (67d177db, 1), (6d92bf46, 1), (5f7d3d03, 1), (a5a96dda, 1), 
+------------
+Word id: af36f434
+Word: light
+Df: 1
+Posting list: (5f7d3d03, 2), 
+------------
+Word id: aa7f4604
+Word: postgradu
+Df: 4
+Posting list: (b1b288a9, 1), (ebfdcd92, 1), (67d177db, 1), (6d92bf46, 1), 
+------------
+Word id: 79fa6fbf
+Word: smart
+Df: 1
+Posting list: (68881195, 1), 
+------------
+Word id: 1bc6c66d
+Word: human
+Df: 1
+Posting list: (5dcff988, 1), 
+------------
+Word id: 551fccbf
+Word: faculti
+Df: 2
+Posting list: (105af579, 1), (03c73f58, 1), 
+------------
+Word id: cb802a9f
+Word: school
+Df: 2
+Posting list: (77043d0b, 1), (b92bde60, 1), 
+------------
+Word id: 2efe26f7
+Word: locat
+Df: 1
+Posting list: (68881195, 1), 
+------------
+Word id: e30eeb69
+Word: gener
+Df: 2
+Posting list: (fbeee284, 1), (b92bde60, 1), 
+------------
+Word id: 769be690
+Word: understand
+Df: 1
+Posting list: (5dcff988, 1), 
+------------
+Word id: 9fbb3fe8
+Word: public
+Df: 1
+Posting list: (85957ee2, 1), 
+------------
+Word id: c289e603
+Word: optim
+Df: 1
+Posting list: (f52d1b08, 1), 
+------------
+Word id: a684c960
+Word: class
+Df: 1
+Posting list: (ca24137b, 1), 
+------------
+Word id: 30015735
+Word: hub
+Df: 1
+Posting list: (b92bde60, 1), 
+------------
+Word id: 30256f43
+Word: mood
+Df: 1
+Posting list: (39e2d1c3, 1), 
+------------
+Word id: 7b8f3cf7
+Word: modul
+Df: 1
+Posting list: (39e2d1c3, 1), 
+------------
+Word id: 510280cd
+Word: fall
+Df: 1
+Posting list: (67d177db, 1), 
+------------
+Word id: 142b679f
+Word: next
+Df: 1
+Posting list: (b92bde60, 1), 
+------------
+Word id: c6a089b7
+Word: kong
+Df: 3
+Posting list: (d4f47e36, 3), (ca24137b, 1), (6d66753d, 1), 
+------------
+Word id: fb1eee38
+Word: analysi
+Df: 1
+Posting list: (87238ded, 1), 
+------------
+Word id: 8031e5ac
+Word: earli
+Df: 1
+Posting list: (67d177db, 1), 
+------------
+Word id: b3f74598
+Word: set
+Df: 1
+Posting list: (b92bde60, 1), 
+------------
