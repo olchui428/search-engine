@@ -1,522 +1,522 @@
 ===== Database: inverted_index_title =====
 
-Word id: 64527220
-Word: robot
-Df: 1
-Posting list: Posting{pageId='9ae9bffb', tf=1, positions=[4]}, 
-------------
-Word id: 274bbd16
-Word: class
-Df: 1
-Posting list: Posting{pageId='484af9a0', tf=1, positions=[2]}, 
-------------
-Word id: 807411b6
-Word: success
-Df: 1
-Posting list: Posting{pageId='f6feb9c8', tf=1, positions=[6]}, 
-------------
-Word id: df5e00ab
-Word: faculti
-Df: 2
-Posting list: Posting{pageId='1ce334c5', tf=1, positions=[0]}, Posting{pageId='3d7c3bb8', tf=1, positions=[0]}, 
-------------
-Word id: a2159d01
-Word: position
-Df: 1
-Posting list: Posting{pageId='645a4609', tf=1, positions=[2]}, 
-------------
-Word id: 807f6286
-Word: partner
-Df: 1
-Posting list: Posting{pageId='a285835a', tf=1, positions=[4]}, 
-------------
-Word id: 981564d1
-Word: the
-Df: 1
-Posting list: Posting{pageId='255ec4a6', tf=1, positions=[0]}, 
-------------
-Word id: 3dcaf8c3
-Word: lawyer
-Df: 1
-Posting list: Posting{pageId='4eeed8b6', tf=1, positions=[1]}, 
-------------
-Word id: ed9cbe64
-Word: new
-Df: 1
-Posting list: Posting{pageId='78c1b977', tf=1, positions=[10]}, 
-------------
-Word id: c338b176
-Word: toward
-Df: 1
-Posting list: Posting{pageId='9ae9bffb', tf=1, positions=[0]}, 
-------------
-Word id: 2c1835b7
-Word: light
-Df: 1
-Posting list: Posting{pageId='645a4609', tf=2, positions=[1, 5]}, 
-------------
-Word id: c36860bd
-Word: machin
-Df: 1
-Posting list: Posting{pageId='47b66534', tf=1, positions=[1]}, 
-------------
-Word id: aae99884
-Word: kong
-Df: 3
-Posting list: Posting{pageId='484af9a0', tf=1, positions=[5]}, Posting{pageId='28605ab4', tf=1, positions=[8]}, Posting{pageId='255ec4a6', tf=3, positions=[2, 8, 10]}, 
-------------
-Word id: 7c79ff8c
-Word: next
-Df: 1
-Posting list: Posting{pageId='78c1b977', tf=1, positions=[4]}, 
-------------
-Word id: 026399fa
-Word: mood
-Df: 1
-Posting list: Posting{pageId='051700c4', tf=1, positions=[0]}, 
-------------
-Word id: 108eae87
-Word: recruit
-Df: 1
-Posting list: Posting{pageId='9dd08919', tf=1, positions=[3]}, 
-------------
-Word id: b4ea5ba4
-Word: resound
-Df: 1
-Posting list: Posting{pageId='f6feb9c8', tf=1, positions=[5]}, 
-------------
-Word id: 49058dd5
-Word: engag
-Df: 1
-Posting list: Posting{pageId='9ae9bffb', tf=1, positions=[2]}, 
-------------
-Word id: 81586f02
-Word: understand
-Df: 1
-Posting list: Posting{pageId='9ae9bffb', tf=1, positions=[1]}, 
-------------
-Word id: b112896c
-Word: scienc
-Df: 3
-Posting list: Posting{pageId='255ec4a6', tf=1, positions=[4]}, Posting{pageId='9676c57e', tf=1, positions=[2]}, Posting{pageId='fb099890', tf=1, positions=[2]}, 
-------------
-Word id: bf8a0421
-Word: school
-Df: 2
-Posting list: Posting{pageId='5806abff', tf=1, positions=[3]}, Posting{pageId='78c1b977', tf=1, positions=[13]}, 
-------------
-Word id: 494061c8
-Word: interac
-Df: 1
-Posting list: Posting{pageId='9ae9bffb', tf=1, positions=[5]}, 
-------------
-Word id: b9f719de
-Word: test
-Df: 1
-Posting list: Posting{pageId='6261fcd1', tf=1, positions=[2]}, 
-------------
-Word id: 1def33c6
-Word: robo
-Df: 1
-Posting list: Posting{pageId='4eeed8b6', tf=1, positions=[0]}, 
-------------
-Word id: 368c0df6
-Word: data
-Df: 1
-Posting list: Posting{pageId='b85fff26', tf=1, positions=[2]}, 
-------------
-Word id: 656f5dbd
-Word: hong
-Df: 3
-Posting list: Posting{pageId='484af9a0', tf=1, positions=[4]}, Posting{pageId='28605ab4', tf=1, positions=[7]}, Posting{pageId='255ec4a6', tf=3, positions=[1, 7, 9]}, 
-------------
-Word id: 992195d0
-Word: admis
-Df: 1
-Posting list: Posting{pageId='273abe3e', tf=1, positions=[1]}, 
-------------
-Word id: 9474c31a
-Word: 2023
-Df: 2
-Posting list: Posting{pageId='f6feb9c8', tf=1, positions=[4]}, Posting{pageId='9dd08919', tf=1, positions=[5]}, 
-------------
-Word id: b654e658
-Word: student
-Df: 2
-Posting list: Posting{pageId='9dd08919', tf=1, positions=[1]}, Posting{pageId='caaba13e', tf=1, positions=[1]}, 
-------------
-Word id: 51cf9987
-Word: optim
-Df: 1
-Posting list: Posting{pageId='f9ec1948', tf=1, positions=[5]}, 
-------------
-Word id: 6a768ba2
-Word: net
-Df: 1
-Posting list: Posting{pageId='1ce334c5', tf=1, positions=[1]}, 
-------------
-Word id: 77bd20a4
-Word: contract
-Df: 1
-Posting list: Posting{pageId='4eeed8b6', tf=1, positions=[3]}, 
-------------
-Word id: 400b1a7c
-Word: visibl
-Df: 1
-Posting list: Posting{pageId='645a4609', tf=1, positions=[0]}, 
-------------
-Word id: 0339400e
-Word: spatiotempor
-Df: 1
-Posting list: Posting{pageId='47b66534', tf=1, positions=[0]}, 
-------------
-Word id: 48fa27ae
-Word: about
-Df: 1
-Posting list: Posting{pageId='d3a612cd', tf=1, positions=[0]}, 
-------------
-Word id: 033c306f
-Word: ambient
-Df: 1
-Posting list: Posting{pageId='645a4609', tf=1, positions=[4]}, 
-------------
-Word id: b0f657a5
-Word: music
-Df: 1
-Posting list: Posting{pageId='051700c4', tf=1, positions=[2]}, 
-------------
-Word id: bb51f243
-Word: inform
-Df: 1
-Posting list: Posting{pageId='a285835a', tf=1, positions=[0]}, 
-------------
-Word id: 6131de4c
-Word: system
-Df: 1
-Posting list: Posting{pageId='f9ec1948', tf=1, positions=[2]}, 
-------------
-Word id: 98f9075d
-Word: perform
-Df: 1
-Posting list: Posting{pageId='f9ec1948', tf=1, positions=[3]}, 
-------------
-Word id: dc564105
-Word: fall
-Df: 1
-Posting list: Posting{pageId='9dd08919', tf=1, positions=[4]}, 
-------------
-Word id: 3aca6e04
-Word: local
-Df: 1
-Posting list: Posting{pageId='645a4609', tf=1, positions=[8]}, 
-------------
-Word id: 954b28c6
-Word: chatbot
-Df: 1
-Posting list: Posting{pageId='4eeed8b6', tf=1, positions=[5]}, 
-------------
-Word id: 02ab9531
-Word: learn
-Df: 3
-Posting list: Posting{pageId='47b66534', tf=1, positions=[2]}, Posting{pageId='6261fcd1', tf=1, positions=[3]}, Posting{pageId='f9ec1948', tf=1, positions=[1]}, 
-------------
-Word id: 02d0a492
-Word: paradigm
-Df: 1
-Posting list: Posting{pageId='78c1b977', tf=1, positions=[11]}, 
-------------
-Word id: 0d2a2589
-Word: postgradu
-Df: 4
-Posting list: Posting{pageId='273abe3e', tf=1, positions=[0]}, Posting{pageId='4e5f0570', tf=1, positions=[0]}, Posting{pageId='9dd08919', tf=1, positions=[0]}, Posting{pageId='caaba13e', tf=1, positions=[0]}, 
-------------
-Word id: 8fefafeb
-Word: abroad
-Df: 1
-Posting list: Posting{pageId='28605ab4', tf=1, positions=[2]}, 
-------------
-Word id: c56cc44f
-Word: hub
-Df: 1
-Posting list: Posting{pageId='78c1b977', tf=1, positions=[8]}, 
-------------
-Word id: f4703dd2
-Word: human
-Df: 1
-Posting list: Posting{pageId='9ae9bffb', tf=1, positions=[3]}, 
-------------
-Word id: 5d358cd0
-Word: engin
-Df: 4
-Posting list: Posting{pageId='5806abff', tf=2, positions=[1, 4]}, Posting{pageId='78c1b977', tf=1, positions=[14]}, Posting{pageId='9676c57e', tf=1, positions=[3]}, Posting{pageId='fb099890', tf=1, positions=[3]}, 
-------------
-Word id: e69763d3
-Word: employ
-Df: 1
-Posting list: Posting{pageId='a285835a', tf=1, positions=[1]}, 
-------------
-Word id: 94b0a25c
-Word: precipit
-Df: 1
-Posting list: Posting{pageId='47b66534', tf=1, positions=[4]}, 
-------------
-Word id: 57c2b75a
-Word: latest
-Df: 1
-Posting list: Posting{pageId='cea403b1', tf=1, positions=[0]}, 
-------------
-Word id: 28e4afc4
-Word: experi
-Df: 1
-Posting list: Posting{pageId='28605ab4', tf=1, positions=[6]}, 
-------------
-Word id: 3c9c7fcc
-Word: encrypt
-Df: 1
-Posting list: Posting{pageId='b85fff26', tf=1, positions=[1]}, 
-------------
-Word id: 28eb63e3
-Word: nowcast
-Df: 1
-Posting list: Posting{pageId='47b66534', tf=1, positions=[5]}, 
-------------
-Word id: bc368dab
-Word: public
-Df: 1
-Posting list: Posting{pageId='c4a70f13', tf=1, positions=[2]}, 
-------------
-Word id: 6226b61c
-Word: cse
-Df: 23
-Posting list: Posting{pageId='273abe3e', tf=1, positions=[3]}, Posting{pageId='1ce334c5', tf=1, positions=[3]}, Posting{pageId='645a4609', tf=1, positions=[10]}, Posting{pageId='a285835a', tf=1, positions=[6]}, Posting{pageId='47b66534', tf=1, positions=[7]}, Posting{pageId='3f427599', tf=1, positions=[5]}, Posting{pageId='f6feb9c8', tf=2, positions=[0, 8]}, Posting{pageId='4e5f0570', tf=1, positions=[3]}, Posting{pageId='9dd08919', tf=1, positions=[8]}, Posting{pageId='0d066827', tf=1, positions=[3]}, Posting{pageId='c4a70f13', tf=2, positions=[4, 6]}, Posting{pageId='6261fcd1', tf=1, positions=[5]}, Posting{pageId='4eeed8b6', tf=1, positions=[7]}, Posting{pageId='f52fcf19', tf=1, positions=[3]}, Posting{pageId='cea403b1', tf=1, positions=[3]}, Posting{pageId='b85fff26', tf=1, positions=[4]}, Posting{pageId='3d7c3bb8', tf=1, positions=[2]}, Posting{pageId='051700c4', tf=1, positions=[4]}, Posting{pageId='d3a612cd', tf=2, positions=[1, 3]}, Posting{pageId='f9ec1948', tf=1, positions=[7]}, Posting{pageId='9ae9bffb', tf=1, positions=[7]}, Posting{pageId='f12a9472', tf=1, positions=[4]}, Posting{pageId='caaba13e', tf=1, positions=[3]}, 
-------------
-Word id: cf0deb6f
-Word: panoram
-Df: 1
-Posting list: Posting{pageId='c4a70f13', tf=1, positions=[0]}, 
-------------
-Word id: 62490b3d
-Word: ai
-Df: 1
-Posting list: Posting{pageId='78c1b977', tf=1, positions=[6]}, 
-------------
-Word id: 254dd8ef
-Word: profil
-Df: 1
-Posting list: Posting{pageId='f9ec1948', tf=1, positions=[4]}, 
-------------
-Word id: 2db9d72a
-Word: industri
-Df: 1
-Posting list: Posting{pageId='a285835a', tf=1, positions=[3]}, 
-------------
-Word id: 46669519
-Word: event
-Df: 1
-Posting list: Posting{pageId='cea403b1', tf=1, positions=[1]}, 
-------------
-Word id: f8abaa03
-Word: hkust
-Df: 30
-Posting list: Posting{pageId='273abe3e', tf=1, positions=[2]}, Posting{pageId='1ce334c5', tf=1, positions=[2]}, Posting{pageId='645a4609', tf=1, positions=[9]}, Posting{pageId='484af9a0', tf=1, positions=[6]}, Posting{pageId='a285835a', tf=1, positions=[5]}, Posting{pageId='47b66534', tf=1, positions=[6]}, Posting{pageId='3f427599', tf=1, positions=[4]}, Posting{pageId='28605ab4', tf=1, positions=[9]}, Posting{pageId='f6feb9c8', tf=1, positions=[7]}, Posting{pageId='4e5f0570', tf=1, positions=[2]}, Posting{pageId='5806abff', tf=2, positions=[0, 2]}, Posting{pageId='9dd08919', tf=1, positions=[7]}, Posting{pageId='0d066827', tf=1, positions=[2]}, Posting{pageId='78c1b977', tf=1, positions=[12]}, Posting{pageId='c4a70f13', tf=2, positions=[3, 5]}, Posting{pageId='6261fcd1', tf=1, positions=[4]}, Posting{pageId='255ec4a6', tf=1, positions=[6]}, Posting{pageId='4eeed8b6', tf=1, positions=[6]}, Posting{pageId='9676c57e', tf=1, positions=[4]}, Posting{pageId='f52fcf19', tf=1, positions=[2]}, Posting{pageId='cea403b1', tf=1, positions=[2]}, Posting{pageId='b85fff26', tf=1, positions=[3]}, Posting{pageId='3d7c3bb8', tf=1, positions=[1]}, Posting{pageId='051700c4', tf=1, positions=[3]}, Posting{pageId='d3a612cd', tf=1, positions=[2]}, Posting{pageId='f9ec1948', tf=1, positions=[6]}, Posting{pageId='9ae9bffb', tf=1, positions=[6]}, Posting{pageId='f12a9472', tf=1, positions=[3]}, Posting{pageId='caaba13e', tf=1, positions=[2]}, Posting{pageId='fb099890', tf=1, positions=[4]}, 
-------------
-Word id: 753c0319
-Word: citi
-Df: 1
-Posting list: Posting{pageId='3f427599', tf=1, positions=[3]}, 
-------------
-Word id: 17856629
-Word: map
-Df: 1
-Posting list: Posting{pageId='f52fcf19', tf=1, positions=[1]}, 
-------------
-Word id: 1fd81327
-Word: amp
-Df: 1
-Posting list: Posting{pageId='a285835a', tf=1, positions=[2]}, 
-------------
-Word id: e2064bfa
-Word: crowdsourc
-Df: 1
-Posting list: Posting{pageId='f12a9472', tf=1, positions=[2]}, 
-------------
-Word id: a5628aab
-Word: best
-Df: 1
-Posting list: Posting{pageId='28605ab4', tf=1, positions=[0]}, 
-------------
-Word id: 7a026e3d
-Word: model
-Df: 1
-Posting list: Posting{pageId='47b66534', tf=1, positions=[3]}, 
-------------
-Word id: dcbc1a78
-Word: forum
-Df: 1
-Posting list: Posting{pageId='f6feb9c8', tf=1, positions=[3]}, 
-------------
-Word id: d9332db0
-Word: technologi
-Df: 2
-Posting list: Posting{pageId='f6feb9c8', tf=1, positions=[2]}, Posting{pageId='255ec4a6', tf=1, positions=[5]}, 
-------------
-Word id: 16beb0c5
-Word: chen
-Df: 1
-Posting list: Posting{pageId='78c1b977', tf=1, positions=[1]}, 
-------------
-Word id: 29a1106f
-Word: search
-Df: 2
-Posting list: Posting{pageId='0d066827', tf=1, positions=[1]}, Posting{pageId='b85fff26', tf=1, positions=[0]}, 
-------------
-Word id: 2a94cc43
-Word: indoor
-Df: 1
-Posting list: Posting{pageId='645a4609', tf=1, positions=[7]}, 
-------------
-Word id: 001b4beb
-Word: depart
-Df: 2
-Posting list: Posting{pageId='9676c57e', tf=1, positions=[0]}, Posting{pageId='fb099890', tf=1, positions=[0]}, 
-------------
-Word id: 3d97502a
-Word: sens
-Df: 1
-Posting list: Posting{pageId='3f427599', tf=1, positions=[1]}, 
-------------
-Word id: 5e7666a8
-Word: spatial
-Df: 1
-Posting list: Posting{pageId='f12a9472', tf=1, positions=[0]}, 
-------------
-Word id: 13087536
-Word: a
-Df: 1
-Posting list: Posting{pageId='4eeed8b6', tf=1, positions=[2]}, 
-------------
-Word id: bd134fcb
-Word: studi
-Df: 2
-Posting list: Posting{pageId='484af9a0', tf=1, positions=[0]}, Posting{pageId='28605ab4', tf=2, positions=[1, 5]}, 
-------------
-Word id: 134bd925
-Word: gener
-Df: 2
-Posting list: Posting{pageId='78c1b977', tf=1, positions=[5]}, Posting{pageId='4eeed8b6', tf=1, positions=[4]}, 
-------------
-Word id: 79ee9fce
-Word: earli
-Df: 1
-Posting list: Posting{pageId='9dd08919', tf=1, positions=[2]}, 
-------------
-Word id: 5512db1f
-Word: via
-Df: 1
-Posting list: Posting{pageId='645a4609', tf=1, positions=[3]}, 
-------------
-Word id: bd60280f
-Word: sensor
-Df: 1
-Posting list: Posting{pageId='645a4609', tf=1, positions=[6]}, 
-------------
-Word id: 219a4562
-Word: design
-Df: 1
-Posting list: Posting{pageId='78c1b977', tf=1, positions=[3]}, 
-------------
-Word id: de7a0d9a
-Word: smart
-Df: 1
-Posting list: Posting{pageId='3f427599', tf=1, positions=[2]}, 
-------------
-Word id: 844b201d
-Word: intak
-Df: 1
-Posting list: Posting{pageId='9dd08919', tf=1, positions=[6]}, 
-------------
-Word id: 189a8b43
-Word: site
-Df: 2
-Posting list: Posting{pageId='0d066827', tf=1, positions=[0]}, Posting{pageId='f52fcf19', tf=1, positions=[0]}, 
-------------
-Word id: 8cd8cf9a
+Word id: 48196f43
 Word: analysi
 Df: 1
-Posting list: Posting{pageId='6261fcd1', tf=1, positions=[1]}, 
+Posting list: Posting{pageId='5e2046f4', tf=1, positions=[1]}, 
 ------------
-Word id: f1520605
-Word: research
+Word id: 309b50b7
+Word: panoram
 Df: 1
-Posting list: Posting{pageId='f6feb9c8', tf=1, positions=[1]}, 
+Posting list: Posting{pageId='6c81cd2c', tf=1, positions=[0]}, 
 ------------
-Word id: a63dcbc0
-Word: set
+Word id: 1481e77a
+Word: encrypt
 Df: 1
-Posting list: Posting{pageId='78c1b977', tf=1, positions=[9]}, 
+Posting list: Posting{pageId='45c54e4e', tf=1, positions=[1]}, 
 ------------
-Word id: 0f070413
-Word: program
-Df: 2
-Posting list: Posting{pageId='28605ab4', tf=1, positions=[3]}, Posting{pageId='4e5f0570', tf=1, positions=[1]}, 
-------------
-Word id: bcc590c7
-Word: code
+Word id: 2ae5b9ab
+Word: net
 Df: 1
-Posting list: Posting{pageId='6261fcd1', tf=1, positions=[0]}, 
+Posting list: Posting{pageId='51074d2e', tf=1, positions=[1]}, 
 ------------
-Word id: 62a1de3d
-Word: view
+Word id: 5193f582
+Word: local
 Df: 1
-Posting list: Posting{pageId='c4a70f13', tf=1, positions=[1]}, 
+Posting list: Posting{pageId='44de8dfe', tf=1, positions=[8]}, 
 ------------
-Word id: b94966ec
-Word: vibrant
+Word id: 437ab0b4
+Word: perform
 Df: 1
-Posting list: Posting{pageId='28605ab4', tf=1, positions=[4]}, 
+Posting list: Posting{pageId='0b7df285', tf=1, positions=[3]}, 
 ------------
-Word id: 04e36ba2
-Word: prof
-Df: 1
-Posting list: Posting{pageId='78c1b977', tf=1, positions=[0]}, 
-------------
-Word id: 22030568
-Word: tempor
-Df: 1
-Posting list: Posting{pageId='f12a9472', tf=1, positions=[1]}, 
-------------
-Word id: e89c1131
-Word: modul
-Df: 1
-Posting list: Posting{pageId='051700c4', tf=1, positions=[1]}, 
-------------
-Word id: 59cfdb33
-Word: comput
-Df: 3
-Posting list: Posting{pageId='78c1b977', tf=1, positions=[7]}, Posting{pageId='9676c57e', tf=1, positions=[1]}, Posting{pageId='fb099890', tf=1, positions=[1]}, 
-------------
-Word id: b3b664c6
-Word: world
-Df: 1
-Posting list: Posting{pageId='484af9a0', tf=1, positions=[1]}, 
-------------
-Word id: fb19138a
-Word: kai
-Df: 1
-Posting list: Posting{pageId='78c1b977', tf=1, positions=[2]}, 
-------------
-Word id: a5b33242
-Word: locat
-Df: 1
-Posting list: Posting{pageId='3f427599', tf=1, positions=[0]}, 
-------------
-Word id: f0e51fdf
-Word: feder
-Df: 1
-Posting list: Posting{pageId='f9ec1948', tf=1, positions=[0]}, 
-------------
-Word id: 432ff6ec
+Word id: ed7cca1a
 Word: univers
 Df: 2
-Posting list: Posting{pageId='484af9a0', tf=1, positions=[3]}, Posting{pageId='255ec4a6', tf=1, positions=[3]}, 
+Posting list: Posting{pageId='a09ca510', tf=1, positions=[3]}, Posting{pageId='03c7111b', tf=1, positions=[3]}, 
+------------
+Word id: 7ad15439
+Word: postgradu
+Df: 4
+Posting list: Posting{pageId='a7050ba4', tf=1, positions=[0]}, Posting{pageId='beffa6a5', tf=1, positions=[0]}, Posting{pageId='07da6545', tf=1, positions=[0]}, Posting{pageId='1d2a8156', tf=1, positions=[0]}, 
+------------
+Word id: d112874d
+Word: data
+Df: 1
+Posting list: Posting{pageId='45c54e4e', tf=1, positions=[2]}, 
+------------
+Word id: 05b3cfbc
+Word: the
+Df: 1
+Posting list: Posting{pageId='a09ca510', tf=1, positions=[0]}, 
+------------
+Word id: c37fcefa
+Word: learn
+Df: 3
+Posting list: Posting{pageId='0b7df285', tf=1, positions=[1]}, Posting{pageId='5e2046f4', tf=1, positions=[3]}, Posting{pageId='a17ba602', tf=1, positions=[2]}, 
+------------
+Word id: 4d166406
+Word: optim
+Df: 1
+Posting list: Posting{pageId='0b7df285', tf=1, positions=[5]}, 
+------------
+Word id: 7c1885e7
+Word: depart
+Df: 2
+Posting list: Posting{pageId='7e35b19e', tf=1, positions=[0]}, Posting{pageId='09a8fc56', tf=1, positions=[0]}, 
+------------
+Word id: e92d47c4
+Word: engin
+Df: 4
+Posting list: Posting{pageId='71b50363', tf=2, positions=[1, 4]}, Posting{pageId='7e35b19e', tf=1, positions=[3]}, Posting{pageId='71510731', tf=1, positions=[14]}, Posting{pageId='09a8fc56', tf=1, positions=[3]}, 
+------------
+Word id: 5b55ee9e
+Word: smart
+Df: 1
+Posting list: Posting{pageId='2694746e', tf=1, positions=[2]}, 
+------------
+Word id: faeac039
+Word: earli
+Df: 1
+Posting list: Posting{pageId='07da6545', tf=1, positions=[2]}, 
+------------
+Word id: e970a1b0
+Word: system
+Df: 1
+Posting list: Posting{pageId='0b7df285', tf=1, positions=[2]}, 
+------------
+Word id: 8a963f99
+Word: success
+Df: 1
+Posting list: Posting{pageId='957ae1c4', tf=1, positions=[6]}, 
+------------
+Word id: ac410acb
+Word: hkust
+Df: 30
+Posting list: Posting{pageId='e7b55769', tf=1, positions=[5]}, Posting{pageId='be991de0', tf=1, positions=[1]}, Posting{pageId='2fca0e43', tf=1, positions=[6]}, Posting{pageId='df9a6c1c', tf=1, positions=[2]}, Posting{pageId='a7050ba4', tf=1, positions=[2]}, Posting{pageId='859fb3e3', tf=1, positions=[2]}, Posting{pageId='71b50363', tf=2, positions=[0, 2]}, Posting{pageId='0b7df285', tf=1, positions=[6]}, Posting{pageId='8ea08232', tf=1, positions=[2]}, Posting{pageId='996ea145', tf=1, positions=[3]}, Posting{pageId='c93d9f29', tf=1, positions=[9]}, Posting{pageId='beffa6a5', tf=1, positions=[2]}, Posting{pageId='957ae1c4', tf=1, positions=[7]}, Posting{pageId='878b27d5', tf=1, positions=[2]}, Posting{pageId='07da6545', tf=1, positions=[7]}, Posting{pageId='44de8dfe', tf=1, positions=[9]}, Posting{pageId='7e35b19e', tf=1, positions=[4]}, Posting{pageId='c11af835', tf=1, positions=[3]}, Posting{pageId='a09ca510', tf=1, positions=[6]}, Posting{pageId='03c7111b', tf=1, positions=[6]}, Posting{pageId='5e2046f4', tf=1, positions=[4]}, Posting{pageId='45c54e4e', tf=1, positions=[3]}, Posting{pageId='7f012c0d', tf=1, positions=[6]}, Posting{pageId='6c81cd2c', tf=2, positions=[3, 5]}, Posting{pageId='71510731', tf=1, positions=[12]}, Posting{pageId='2694746e', tf=1, positions=[4]}, Posting{pageId='a17ba602', tf=1, positions=[6]}, Posting{pageId='1d2a8156', tf=1, positions=[2]}, Posting{pageId='09a8fc56', tf=1, positions=[4]}, Posting{pageId='51074d2e', tf=1, positions=[2]}, 
+------------
+Word id: c2d8278e
+Word: technologi
+Df: 2
+Posting list: Posting{pageId='957ae1c4', tf=1, positions=[2]}, Posting{pageId='a09ca510', tf=1, positions=[5]}, 
+------------
+Word id: c2e114f2
+Word: indoor
+Df: 1
+Posting list: Posting{pageId='44de8dfe', tf=1, positions=[7]}, 
+------------
+Word id: ee0cfc51
+Word: student
+Df: 2
+Posting list: Posting{pageId='a7050ba4', tf=1, positions=[1]}, Posting{pageId='07da6545', tf=1, positions=[1]}, 
+------------
+Word id: f1e1d661
+Word: employ
+Df: 1
+Posting list: Posting{pageId='e7b55769', tf=1, positions=[1]}, 
+------------
+Word id: 5709a1c4
+Word: robot
+Df: 1
+Posting list: Posting{pageId='2fca0e43', tf=1, positions=[4]}, 
+------------
+Word id: 940d1b91
+Word: machin
+Df: 1
+Posting list: Posting{pageId='a17ba602', tf=1, positions=[1]}, 
+------------
+Word id: 07701425
+Word: light
+Df: 1
+Posting list: Posting{pageId='44de8dfe', tf=2, positions=[1, 5]}, 
+------------
+Word id: 2be1d190
+Word: a
+Df: 1
+Posting list: Posting{pageId='7f012c0d', tf=1, positions=[2]}, 
+------------
+Word id: ee6e355a
+Word: human
+Df: 1
+Posting list: Posting{pageId='2fca0e43', tf=1, positions=[3]}, 
+------------
+Word id: 783ebc09
+Word: ambient
+Df: 1
+Posting list: Posting{pageId='44de8dfe', tf=1, positions=[4]}, 
+------------
+Word id: 1a124d03
+Word: interac
+Df: 1
+Posting list: Posting{pageId='2fca0e43', tf=1, positions=[5]}, 
+------------
+Word id: 99518fb2
+Word: code
+Df: 1
+Posting list: Posting{pageId='5e2046f4', tf=1, positions=[0]}, 
+------------
+Word id: a821aaf0
+Word: about
+Df: 1
+Posting list: Posting{pageId='8ea08232', tf=1, positions=[0]}, 
+------------
+Word id: 8ee85b0d
+Word: event
+Df: 1
+Posting list: Posting{pageId='df9a6c1c', tf=1, positions=[1]}, 
+------------
+Word id: c9148574
+Word: recruit
+Df: 1
+Posting list: Posting{pageId='07da6545', tf=1, positions=[3]}, 
+------------
+Word id: a3926d74
+Word: model
+Df: 1
+Posting list: Posting{pageId='a17ba602', tf=1, positions=[3]}, 
+------------
+Word id: 1f19f338
+Word: via
+Df: 1
+Posting list: Posting{pageId='44de8dfe', tf=1, positions=[3]}, 
+------------
+Word id: 06b62613
+Word: nowcast
+Df: 1
+Posting list: Posting{pageId='a17ba602', tf=1, positions=[5]}, 
+------------
+Word id: beb75647
+Word: gener
+Df: 2
+Posting list: Posting{pageId='7f012c0d', tf=1, positions=[4]}, Posting{pageId='71510731', tf=1, positions=[5]}, 
+------------
+Word id: bead6046
+Word: resound
+Df: 1
+Posting list: Posting{pageId='957ae1c4', tf=1, positions=[5]}, 
+------------
+Word id: 1a7d0e32
+Word: sensor
+Df: 1
+Posting list: Posting{pageId='44de8dfe', tf=1, positions=[6]}, 
+------------
+Word id: 19b4e0b0
+Word: fall
+Df: 1
+Posting list: Posting{pageId='07da6545', tf=1, positions=[4]}, 
+------------
+Word id: 80fab619
+Word: sens
+Df: 1
+Posting list: Posting{pageId='2694746e', tf=1, positions=[1]}, 
+------------
+Word id: f89747ad
+Word: prof
+Df: 1
+Posting list: Posting{pageId='71510731', tf=1, positions=[0]}, 
+------------
+Word id: 64fcb23c
+Word: profil
+Df: 1
+Posting list: Posting{pageId='0b7df285', tf=1, positions=[4]}, 
+------------
+Word id: 1f8ef51d
+Word: kong
+Df: 3
+Posting list: Posting{pageId='c93d9f29', tf=1, positions=[8]}, Posting{pageId='a09ca510', tf=3, positions=[2, 8, 10]}, Posting{pageId='03c7111b', tf=1, positions=[5]}, 
+------------
+Word id: ea077f91
+Word: test
+Df: 1
+Posting list: Posting{pageId='5e2046f4', tf=1, positions=[2]}, 
+------------
+Word id: b0cb9fb1
+Word: comput
+Df: 3
+Posting list: Posting{pageId='7e35b19e', tf=1, positions=[1]}, Posting{pageId='71510731', tf=1, positions=[7]}, Posting{pageId='09a8fc56', tf=1, positions=[1]}, 
+------------
+Word id: bb3bc241
+Word: partner
+Df: 1
+Posting list: Posting{pageId='e7b55769', tf=1, positions=[4]}, 
+------------
+Word id: ce1983a9
+Word: intak
+Df: 1
+Posting list: Posting{pageId='07da6545', tf=1, positions=[6]}, 
+------------
+Word id: ce0bd43f
+Word: admis
+Df: 1
+Posting list: Posting{pageId='beffa6a5', tf=1, positions=[1]}, 
+------------
+Word id: 612ba022
+Word: abroad
+Df: 1
+Posting list: Posting{pageId='c93d9f29', tf=1, positions=[2]}, 
+------------
+Word id: f2e769c8
+Word: industri
+Df: 1
+Posting list: Posting{pageId='e7b55769', tf=1, positions=[3]}, 
+------------
+Word id: ce66bd9b
+Word: school
+Df: 2
+Posting list: Posting{pageId='71b50363', tf=1, positions=[3]}, Posting{pageId='71510731', tf=1, positions=[13]}, 
+------------
+Word id: 08577a4b
+Word: kai
+Df: 1
+Posting list: Posting{pageId='71510731', tf=1, positions=[2]}, 
+------------
+Word id: 5bb8b3b9
+Word: music
+Df: 1
+Posting list: Posting{pageId='c11af835', tf=1, positions=[2]}, 
+------------
+Word id: c016f87e
+Word: 2023
+Df: 2
+Posting list: Posting{pageId='957ae1c4', tf=1, positions=[4]}, Posting{pageId='07da6545', tf=1, positions=[5]}, 
+------------
+Word id: e9c6add1
+Word: locat
+Df: 1
+Posting list: Posting{pageId='2694746e', tf=1, positions=[0]}, 
+------------
+Word id: ef6c3445
+Word: mood
+Df: 1
+Posting list: Posting{pageId='c11af835', tf=1, positions=[0]}, 
+------------
+Word id: 5bf54e0b
+Word: chen
+Df: 1
+Posting list: Posting{pageId='71510731', tf=1, positions=[1]}, 
+------------
+Word id: e12ae1e3
+Word: hong
+Df: 3
+Posting list: Posting{pageId='c93d9f29', tf=1, positions=[7]}, Posting{pageId='a09ca510', tf=3, positions=[1, 7, 9]}, Posting{pageId='03c7111b', tf=1, positions=[4]}, 
+------------
+Word id: d807b2f0
+Word: site
+Df: 2
+Posting list: Posting{pageId='859fb3e3', tf=1, positions=[0]}, Posting{pageId='878b27d5', tf=1, positions=[0]}, 
+------------
+Word id: c09224c3
+Word: best
+Df: 1
+Posting list: Posting{pageId='c93d9f29', tf=1, positions=[0]}, 
+------------
+Word id: d350f305
+Word: view
+Df: 1
+Posting list: Posting{pageId='6c81cd2c', tf=1, positions=[1]}, 
+------------
+Word id: d3589287
+Word: visibl
+Df: 1
+Posting list: Posting{pageId='44de8dfe', tf=1, positions=[0]}, 
+------------
+Word id: bfa7fa62
+Word: latest
+Df: 1
+Posting list: Posting{pageId='df9a6c1c', tf=1, positions=[0]}, 
+------------
+Word id: c57e9fc6
+Word: program
+Df: 2
+Posting list: Posting{pageId='c93d9f29', tf=1, positions=[3]}, Posting{pageId='1d2a8156', tf=1, positions=[1]}, 
+------------
+Word id: 23f4ce1e
+Word: spatial
+Df: 1
+Posting list: Posting{pageId='996ea145', tf=1, positions=[0]}, 
+------------
+Word id: 0d7a389b
+Word: inform
+Df: 1
+Posting list: Posting{pageId='e7b55769', tf=1, positions=[0]}, 
+------------
+Word id: bfdc5f8c
+Word: citi
+Df: 1
+Posting list: Posting{pageId='2694746e', tf=1, positions=[3]}, 
+------------
+Word id: bff7285e
+Word: crowdsourc
+Df: 1
+Posting list: Posting{pageId='996ea145', tf=1, positions=[2]}, 
+------------
+Word id: 5d6d10bf
+Word: cse
+Df: 23
+Posting list: Posting{pageId='e7b55769', tf=1, positions=[6]}, Posting{pageId='be991de0', tf=1, positions=[2]}, Posting{pageId='2fca0e43', tf=1, positions=[7]}, Posting{pageId='df9a6c1c', tf=1, positions=[3]}, Posting{pageId='a7050ba4', tf=1, positions=[3]}, Posting{pageId='859fb3e3', tf=1, positions=[3]}, Posting{pageId='0b7df285', tf=1, positions=[7]}, Posting{pageId='8ea08232', tf=2, positions=[1, 3]}, Posting{pageId='996ea145', tf=1, positions=[4]}, Posting{pageId='beffa6a5', tf=1, positions=[3]}, Posting{pageId='957ae1c4', tf=2, positions=[0, 8]}, Posting{pageId='878b27d5', tf=1, positions=[3]}, Posting{pageId='07da6545', tf=1, positions=[8]}, Posting{pageId='44de8dfe', tf=1, positions=[10]}, Posting{pageId='c11af835', tf=1, positions=[4]}, Posting{pageId='5e2046f4', tf=1, positions=[5]}, Posting{pageId='45c54e4e', tf=1, positions=[4]}, Posting{pageId='7f012c0d', tf=1, positions=[7]}, Posting{pageId='6c81cd2c', tf=2, positions=[4, 6]}, Posting{pageId='2694746e', tf=1, positions=[5]}, Posting{pageId='a17ba602', tf=1, positions=[7]}, Posting{pageId='1d2a8156', tf=1, positions=[3]}, Posting{pageId='51074d2e', tf=1, positions=[3]}, 
+------------
+Word id: 04076750
+Word: set
+Df: 1
+Posting list: Posting{pageId='71510731', tf=1, positions=[9]}, 
+------------
+Word id: b1d67dcb
+Word: spatiotempor
+Df: 1
+Posting list: Posting{pageId='a17ba602', tf=1, positions=[0]}, 
+------------
+Word id: 330a054e
+Word: next
+Df: 1
+Posting list: Posting{pageId='71510731', tf=1, positions=[4]}, 
+------------
+Word id: d2bcb7cc
+Word: experi
+Df: 1
+Posting list: Posting{pageId='c93d9f29', tf=1, positions=[6]}, 
+------------
+Word id: 207bf534
+Word: research
+Df: 1
+Posting list: Posting{pageId='957ae1c4', tf=1, positions=[1]}, 
+------------
+Word id: f3dee9e7
+Word: ai
+Df: 1
+Posting list: Posting{pageId='71510731', tf=1, positions=[6]}, 
+------------
+Word id: fe9c58d0
+Word: tempor
+Df: 1
+Posting list: Posting{pageId='996ea145', tf=1, positions=[1]}, 
+------------
+Word id: 9677431e
+Word: position
+Df: 1
+Posting list: Posting{pageId='44de8dfe', tf=1, positions=[2]}, 
+------------
+Word id: bbf00dbe
+Word: hub
+Df: 1
+Posting list: Posting{pageId='71510731', tf=1, positions=[8]}, 
+------------
+Word id: e29fa0e9
+Word: precipit
+Df: 1
+Posting list: Posting{pageId='a17ba602', tf=1, positions=[4]}, 
+------------
+Word id: d48f385f
+Word: chatbot
+Df: 1
+Posting list: Posting{pageId='7f012c0d', tf=1, positions=[5]}, 
+------------
+Word id: 4b5c2966
+Word: scienc
+Df: 3
+Posting list: Posting{pageId='7e35b19e', tf=1, positions=[2]}, Posting{pageId='a09ca510', tf=1, positions=[4]}, Posting{pageId='09a8fc56', tf=1, positions=[2]}, 
+------------
+Word id: 82bdd033
+Word: engag
+Df: 1
+Posting list: Posting{pageId='2fca0e43', tf=1, positions=[2]}, 
+------------
+Word id: efea222c
+Word: faculti
+Df: 2
+Posting list: Posting{pageId='be991de0', tf=1, positions=[0]}, Posting{pageId='51074d2e', tf=1, positions=[0]}, 
+------------
+Word id: aa3b48e8
+Word: understand
+Df: 1
+Posting list: Posting{pageId='2fca0e43', tf=1, positions=[1]}, 
+------------
+Word id: 79c4f904
+Word: amp
+Df: 1
+Posting list: Posting{pageId='e7b55769', tf=1, positions=[2]}, 
+------------
+Word id: af19352a
+Word: new
+Df: 1
+Posting list: Posting{pageId='71510731', tf=1, positions=[10]}, 
+------------
+Word id: b2bca793
+Word: world
+Df: 1
+Posting list: Posting{pageId='03c7111b', tf=1, positions=[1]}, 
+------------
+Word id: 507fd4ad
+Word: modul
+Df: 1
+Posting list: Posting{pageId='c11af835', tf=1, positions=[1]}, 
+------------
+Word id: 8426f4a1
+Word: paradigm
+Df: 1
+Posting list: Posting{pageId='71510731', tf=1, positions=[11]}, 
+------------
+Word id: e6cc505b
+Word: forum
+Df: 1
+Posting list: Posting{pageId='957ae1c4', tf=1, positions=[3]}, 
+------------
+Word id: 6bf2080a
+Word: vibrant
+Df: 1
+Posting list: Posting{pageId='c93d9f29', tf=1, positions=[4]}, 
+------------
+Word id: 12c1707f
+Word: feder
+Df: 1
+Posting list: Posting{pageId='0b7df285', tf=1, positions=[0]}, 
+------------
+Word id: 04fc0c69
+Word: class
+Df: 1
+Posting list: Posting{pageId='03c7111b', tf=1, positions=[2]}, 
+------------
+Word id: 3e4faf7e
+Word: contract
+Df: 1
+Posting list: Posting{pageId='7f012c0d', tf=1, positions=[3]}, 
+------------
+Word id: 54dd34a1
+Word: search
+Df: 2
+Posting list: Posting{pageId='859fb3e3', tf=1, positions=[1]}, Posting{pageId='45c54e4e', tf=1, positions=[0]}, 
+------------
+Word id: 83e1aad8
+Word: studi
+Df: 2
+Posting list: Posting{pageId='c93d9f29', tf=2, positions=[1, 5]}, Posting{pageId='03c7111b', tf=1, positions=[0]}, 
+------------
+Word id: a0ca396f
+Word: map
+Df: 1
+Posting list: Posting{pageId='878b27d5', tf=1, positions=[1]}, 
+------------
+Word id: e89fe349
+Word: robo
+Df: 1
+Posting list: Posting{pageId='7f012c0d', tf=1, positions=[0]}, 
+------------
+Word id: a0e8767b
+Word: lawyer
+Df: 1
+Posting list: Posting{pageId='7f012c0d', tf=1, positions=[1]}, 
+------------
+Word id: 8002a1b2
+Word: toward
+Df: 1
+Posting list: Posting{pageId='2fca0e43', tf=1, positions=[0]}, 
+------------
+Word id: ab4eed3d
+Word: design
+Df: 1
+Posting list: Posting{pageId='71510731', tf=1, positions=[3]}, 
+------------
+Word id: 640d9766
+Word: public
+Df: 1
+Posting list: Posting{pageId='6c81cd2c', tf=1, positions=[2]}, 
 ------------
