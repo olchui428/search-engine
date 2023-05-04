@@ -16,7 +16,7 @@ import project.utils.Porter;
 import project.Utils;
 
 public class SearchEngine {
-    public int numPages = 30;
+    public int NUM_PAGES = 300;
     public double TITLE_BONUS = 1.2;
 
     private DatabaseManager recmanPages;
@@ -24,14 +24,16 @@ public class SearchEngine {
     private DatabaseManager recmanInvBody;
     private ArrayList<String> query;
     private ArrayList<String> queryPhrase;
+    private int numResult;
 
-    protected SearchEngine(String query, int numPages, DatabaseManager recmanPages, DatabaseManager recmanInvTitle, DatabaseManager recmanInvBody) {
+
+    protected SearchEngine(String query, int numResult, DatabaseManager recmanPages, DatabaseManager recmanInvTitle, DatabaseManager recmanInvBody) {
         this.recmanPages = recmanPages;
         this.recmanInvTitle = recmanInvTitle;
         this.recmanInvBody = recmanInvBody;
         this.query = new ArrayList<String>(Arrays.asList(query.split(" ")));
         this.queryPhrase = new ArrayList<>();
-        this.numPages = numPages;
+        this.numResult = numResult;
     }
 
     public Map<String, Double> start(String inputQuery) throws IOException {
@@ -172,13 +174,12 @@ public class SearchEngine {
 
             // Compute Title weight (weight of doc += pf * TITLE_BONUS)
             double dfTitle = docToPrevWordPos.keySet().size();
-//            double maxPfTitle = 0;
-//            for (String pageID : docToPrevWordPos.keySet()) {
-//                maxPfTitle = Math.max(maxPfTitle, docToPrevWordPos.get(pageID).size());
-//            }
             for (String pageID : docToPrevWordPos.keySet()) {
                 double pf = docToPrevWordPos.get(pageID).size();
-                double idfP = Math.log(numPages / dfTitle) / Math.log(2);
+                double idfP = Math.log(NUM_PAGES / dfTitle) / Math.log(2);
+                if (idfP < 0) {
+                    System.out.println("idfP TITLE NEGATIVE!!! " + idfP);
+                }
                 double weight = pf * idfP * TITLE_BONUS;
 
                 // Update numerator (Sum of d_ik)
@@ -198,7 +199,10 @@ public class SearchEngine {
             }
             for (String pageID : docToPrevWordPos.keySet()) {
                 double pf = docToPrevWordPos.get(pageID).size();
-                double idfP = Math.log(numPages / df) / Math.log(2);
+                double idfP = Math.log(NUM_PAGES / df) / Math.log(2);
+                if (idfP < 0) {
+                    System.out.println("idfP NEGATIVE!!! " + idfP);
+                }
                 double weight = pf * idfP / maxPf;
 
                 // Update numerator (Sum of d_ik)
@@ -236,7 +240,10 @@ public class SearchEngine {
                     // Compute term weight
                     double tf = posting.getTf();
                     double df = ((Term) recmanInvTitle.get(wordID)).getDf();
-                    double idf = Math.log(numPages / df) / Math.log(2);
+                    double idf = Math.log(NUM_PAGES / df) / Math.log(2);
+                    if (idf < 0) {
+                        System.out.println("idf TITLE NEGATIVE!!! " + idf);
+                    }
                     double weight = tf * idf * TITLE_BONUS;
 
                     // Compute numerator
@@ -268,11 +275,14 @@ public class SearchEngine {
                         maxTf = Math.max(maxTf, Collections.max(integers));
                     }
                     double df = ((Term) recmanInvBody.get(wordID)).getDf();
-                    double idf = Math.log(numPages / df) / Math.log(2);
+                    double idf = Math.log(NUM_PAGES / df) / Math.log(2);
+                    if (idf < 0) {
+                        System.out.println("idf TITLE NEGATIVE!!! " + idf);
+                    }
                     if (maxTf == 0) {
                         continue;
                     }
-                    double weightD = (tf / maxTf) * idf;
+                    double weightD = tf * idf / maxTf;
 
                     // Compute numerator
                     double numerator = weightD * weightQ;

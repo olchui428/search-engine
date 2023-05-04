@@ -147,7 +147,7 @@ public class Server {
 //                Map<String, Integer> forwardIndex = project.Utils.sortMapDesc(page.getForwardIndex());
                 JSONArray forwardIndexJson = new JSONArray();
                 for (String word : Utils.sortMapDesc(forwardIndex).keySet()) {
-                    System.out.println("word = " + word + ", tf = " + forwardIndex.get(word));
+//                    System.out.println("word = " + word + ", tf = " + forwardIndex.get(word));
                     JSONObject wordToTf = new JSONObject();
                     wordToTf.put("word", word);
                     wordToTf.put("tf", forwardIndex.get(word));

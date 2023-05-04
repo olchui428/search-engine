@@ -18,7 +18,7 @@ public class TestClass {
     @Test
     public void testSpiderIndexer() {
         String testingURL = "https://cse.hkust.edu.hk/";
-        int numPages = 30;
+        int numPages = 300;
 
         DatabaseManager recmanPages, recmanUrlToId, recmanInvTitle, recmanInvBody, recmanTermToId;
 

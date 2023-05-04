@@ -52,7 +52,7 @@ public class Spider {
         queue.add(startingURL);
         while (queue.size() != 0 && numFetchedPages < numPages) {
             URL url = queue.poll();
-            System.out.println("Fetching " + url + "...");
+            System.out.println(numFetchedPages + ". Fetching " + url + "...");
 
             if (!shouldFetch(url)) {
                 continue;
