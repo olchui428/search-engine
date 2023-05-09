@@ -10,6 +10,7 @@ import project.utils.Porter;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Map;
+import java.util.Stack;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -84,8 +85,8 @@ public class TestClass {
     public void testSearchEnginePhrase() throws IOException {
 //        String query = """
 //                To make the Robo-lawyer more like a real person, sentiment analysis has been employed to help identify true feelings and moods of a person heading to a divorce through the dialogue. When a user writes "I am glad", for instance, it should be interpreted as an expression of relief instead of being upbeat. It even makes effort to persuade couples to think twice before finally deciding to divorce. """;
-//        String query = "bitch \"hong kong\" hello \"nei ho\" bye";
-        String query = "\"mood modulat\"";
+//        String query = "bitch \" nn \" hello \"   nei ho ho\" bye";
+        String query = "\"hong kong university\"";
         int numPages = 30;
 
         DatabaseManager recmanPages = new DatabaseManager(TableName.PAGES);
@@ -102,6 +103,47 @@ public class TestClass {
         for (String s : result.keySet()) {
             System.out.println(((Page) recmanPages.get(s)).getTitle() + ": " + result.get(s));
         }
+//        inputQuery =
+//        ArrayList<String> queryPhrase = new ArrayList<>();
+//        ArrayList<String> query = new ArrayList<>();
+//        Stack<String> quotes = new Stack<>();
+//        String phraseTemp = "";
+//        for (String word : inputQuery.split("")) {
+//            System.out.println(">>> word = " + word);
+//            if (word.contains("\"")) {
+//                if () {
+//                } else if (quotes.isEmpty()) {
+//                    System.out.println(1);
+//                    quotes.push("\"");
+//                    phraseTemp = phraseTemp.concat(word.replace("\"", ""));
+//                } else {
+//                    System.out.println(2);
+//                    quotes.pop();
+//                    if (!word.equals("\"")) {
+//                        System.out.println(2.1);
+//                        phraseTemp = phraseTemp == "" ? phraseTemp.concat(word.replace("\"", "").replace(" ", "")) : phraseTemp.concat(" " + word.replace("\"", "").replace(" ", ""));
+//                    }
+//                    queryPhrase.add(phraseTemp);
+//                    phraseTemp = "";
+//                }
+//            } else {
+//                if (quotes.isEmpty()) {
+//                    System.out.println(3);
+//
+//                    query.add(word);
+//                } else {
+//                    System.out.println(4);
+//                    phraseTemp = phraseTemp == "" ? phraseTemp.concat(word.replace("\"", "").replace(" ", "")) : phraseTemp.concat(" " + word.replace("\"", "").replace(" ", ""));
+//                }
+//            }
+//            System.out.println("query = " + query);
+//            System.out.println("queryPhrase = " + queryPhrase);
+//
+//        }
+//        System.out.println("query = " + query);
+//        System.out.println("queryPhrase = " + queryPhrase);
+
+
     }
 
     static public void testOutputToTxt(TableName tableName, String filepath) {

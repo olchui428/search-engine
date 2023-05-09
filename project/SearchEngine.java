@@ -50,6 +50,7 @@ public class SearchEngine {
             String phrase = m.group(1);
             queryPhrase.add(phrase);
             System.out.println(phrase);
+            inputQuery = inputQuery.replace(phrase, "");
         }
 
         // Normal query (ignore phrase search)
@@ -57,13 +58,14 @@ public class SearchEngine {
         StringTokenizer st = new StringTokenizer(inputQuery);
         ArrayList<String> query = new ArrayList<>();
         while (st.hasMoreTokens()) {
-            query.add(st.nextToken());
+            String s = st.nextToken();
+            if (!s.equals("\"")) {
+                query.add(s);
+            }
         }
         query = Indexer.removeStopWords(query);
         query = Indexer.stem(query);
         System.out.println("StopStemmed query: " + query);
-
-        // ----- Ranking -----
 
         // Processing query
         Hashtable<String, Integer> queryIndex = new Hashtable<>(); // word -> tf in query
@@ -77,6 +79,8 @@ public class SearchEngine {
             }
         }
 
+        // ----- Ranking -----
+
         // Compute numerator (for cosine similarity) for each document
 
         Map<String, Double> docNumeratorMap = new HashMap<>(); // PageId -> weight
@@ -87,8 +91,7 @@ public class SearchEngine {
         // Search for phrases
 
         for (String phraseStr : queryPhrase) {
-            System.out.println("Calculating " + phraseStr);
-            String[] phrase = phraseStr.split(" ");
+            String[] phrase = phraseStr.split("\\s+");
             if (phrase.length < 2) {
                 // Not an actual phrase
                 continue;
@@ -99,6 +102,9 @@ public class SearchEngine {
 
             for (String word : phrase) {
                 System.out.println("For Word " + word);
+                if (word.equals("")) {
+                    continue;
+                }
                 String wordID = (String) recmanTermToId.get(word);
                 if (wordID == null) {
                     continue;
@@ -172,23 +178,35 @@ public class SearchEngine {
             }
 //            System.out.println("docToPrevWordPos = " + docToPrevWordPos);
 
-            // Compute Title weight (weight of doc += pf * TITLE_BONUS)
-            double dfTitle = docToPrevWordPos.keySet().size();
-            for (String pageID : docToPrevWordPos.keySet()) {
-                double pf = docToPrevWordPos.get(pageID).size();
+            // Compute Title weight (weight of doc += pf * idfP * TITLE_BONUS / maxPf)
+            double dfTitle = docToPrevWordPosTitle.keySet().size();
+//            System.out.println("docToPrevWordPosTitle = " + docToPrevWordPosTitle);
+            double maxPfTitle = 0;
+            for (String pageID : docToPrevWordPosTitle.keySet()) {
+                maxPfTitle = Math.max(maxPfTitle, docToPrevWordPosTitle.get(pageID).size());
+            }
+//            System.out.println("maxPfTitle = " + maxPfTitle);
+            for (String pageID : docToPrevWordPosTitle.keySet()) {
+//                System.out.println("Title = " + ((Page) recmanPages.get(pageID)).getTitle());
+                double pf = docToPrevWordPosTitle.get(pageID).size();
+//                System.out.println("pf = " + pf);
                 double idfP = Math.log(NUM_PAGES / dfTitle) / Math.log(2);
-                if (idfP < 0) {
-                    System.out.println("idfP TITLE NEGATIVE!!! " + idfP);
+//                System.out.println("idfP = " + idfP);
+                if (maxPfTitle == 0) {
+                    continue;
                 }
-                double weight = pf * idfP * TITLE_BONUS;
+                double weight = pf * idfP * TITLE_BONUS / maxPfTitle;
+//                System.out.println("weight = " + weight);
 
                 // Update numerator (Sum of d_ik)
                 Double numeratorOld = docNumeratorMap.get(pageID);
+//                System.out.println("numeratorOld = " + numeratorOld);
                 if (numeratorOld == null) {
                     docNumeratorMap.put(pageID, weight);
                 } else {
                     docNumeratorMap.put(pageID, numeratorOld + weight);
                 }
+//                System.out.println("numeratorNew = " + docNumeratorMap.get(pageID));
             }
 
             // Compute Body weight (weight of doc += pf * idfP / maxPf)
@@ -197,21 +215,29 @@ public class SearchEngine {
             for (String pageID : docToPrevWordPos.keySet()) {
                 maxPf = Math.max(maxPf, docToPrevWordPos.get(pageID).size());
             }
+//            System.out.println("Compute Body weight>>>");
+//            System.out.println("maxPf = " + maxPf);
             for (String pageID : docToPrevWordPos.keySet()) {
+//                System.out.println("Title = " + ((Page) recmanPages.get(pageID)).getTitle());
                 double pf = docToPrevWordPos.get(pageID).size();
+//                System.out.println("pf = " + pf);
                 double idfP = Math.log(NUM_PAGES / df) / Math.log(2);
-                if (idfP < 0) {
-                    System.out.println("idfP NEGATIVE!!! " + idfP);
+//                System.out.println("idfP = " + idfP);
+                if (maxPf == 0) {
+                    continue;
                 }
                 double weight = pf * idfP / maxPf;
+//                System.out.println("weight = " + weight);
 
                 // Update numerator (Sum of d_ik)
                 Double numeratorOld = docNumeratorMap.get(pageID);
+//                System.out.println("numeratorOld = " + numeratorOld);
                 if (numeratorOld == null) {
                     docNumeratorMap.put(pageID, weight);
                 } else {
                     docNumeratorMap.put(pageID, numeratorOld + weight);
                 }
+//                System.out.println("numeratorNew = " + docNumeratorMap.get(pageID));
             }
 
 //            System.out.println("docNumeratorMap = " + docNumeratorMap);
@@ -229,7 +255,7 @@ public class SearchEngine {
             // Compute query weight
             double weightQ = queryIndex.get(q);
 
-            // ----- Title (weight of doc += tf * idf / maxTf * TITLE_BONUS) -----
+            // ----- Title (weight of doc += tf * idf * TITLE_BONUS / maxTf) -----
 
             if (recmanInvTitle.get(wordID) != null) {
                 Term term = (Term) recmanInvTitle.get(wordID);
@@ -239,12 +265,16 @@ public class SearchEngine {
 
                     // Compute term weight
                     double tf = posting.getTf();
+                    double maxTf = 0;
+                    for (ArrayList<Integer> integers : page.getForwardIndexTitle().values()) {
+                        maxTf = Math.max(maxTf, Collections.max(integers));
+                    }
                     double df = ((Term) recmanInvTitle.get(wordID)).getDf();
                     double idf = Math.log(NUM_PAGES / df) / Math.log(2);
-                    if (idf < 0) {
-                        System.out.println("idf TITLE NEGATIVE!!! " + idf);
+                    if (maxTf == 0) {
+                        continue;
                     }
-                    double weight = tf * idf * TITLE_BONUS;
+                    double weight = tf * idf * TITLE_BONUS / maxTf;
 
                     // Compute numerator
                     double numerator = weight * weightQ;
@@ -276,9 +306,6 @@ public class SearchEngine {
                     }
                     double df = ((Term) recmanInvBody.get(wordID)).getDf();
                     double idf = Math.log(NUM_PAGES / df) / Math.log(2);
-                    if (idf < 0) {
-                        System.out.println("idf TITLE NEGATIVE!!! " + idf);
-                    }
                     if (maxTf == 0) {
                         continue;
                     }
@@ -302,8 +329,7 @@ public class SearchEngine {
         // Compute cosine similarity score
         System.out.println();
         System.out.println("COS similarity>>>>");
-        for (
-                Map.Entry<String, Double> entry : docNumeratorMap.entrySet()) {
+        for (Map.Entry<String, Double> entry : docNumeratorMap.entrySet()) {
             String pageID = entry.getKey();
             double docWeight = entry.getValue();
             Page page = (Page) recmanPages.get(pageID);

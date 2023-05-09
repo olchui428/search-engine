@@ -6,9 +6,13 @@ public class Utils {
     static public double CosSim(double weight, Page page, ArrayList<String> query) {
         int numWord = page.getPageSize();
         double documentLength = Math.sqrt(numWord);
+//        System.out.println("documentLength = " + documentLength);
         double queryLength = Math.sqrt(query.size());
+//        System.out.println("queryLength = " + queryLength);
         double dotProduct = weight;
+//        System.out.println("dotProduct = " + dotProduct);
         double score = dotProduct / (documentLength * queryLength);
+//        System.out.println("score = " + score);
         return score;
     }
 

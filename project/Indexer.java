@@ -181,6 +181,12 @@ public class Indexer {
 //                System.out.println("str = " + str + ", position = " + position);
             }
 
+            // Update forwardIndex of page (for body only)
+            Page page = (Page) recmanPages.getDb().get(pageId);
+            page.setForwardIndexTitle(forwardIndex);
+            System.out.println("forwardIndexTitle = " + forwardIndex);
+            recmanPages.update(pageId, page);
+
             // Update invertedFileTitle and termToID
             for (String word : forwardIndex.keySet()) {
                 String wordId = termToID.get(word);

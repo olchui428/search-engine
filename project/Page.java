@@ -18,6 +18,7 @@ public class Page implements Serializable {
     private HashSet<URL> childLinks = new HashSet<>();
     private HashSet<URL> parentLinks = new HashSet<>();
     private Hashtable<String, ArrayList<Integer>> forwardIndex = new Hashtable(); // word -> positions
+    private Hashtable<String, ArrayList<Integer>> forwardIndexTitle = new Hashtable(); // word -> positions
     // TODO: map wordId instead of word
 
     // Constructor
@@ -63,6 +64,10 @@ public class Page implements Serializable {
         return forwardIndex;
     }
 
+    public Hashtable<String, ArrayList<Integer>> getForwardIndexTitle() {
+        return forwardIndexTitle;
+    }
+
     // Setters
 
     public void setLastModificationDate(LocalDateTime date) {
@@ -104,6 +109,10 @@ public class Page implements Serializable {
         this.forwardIndex = forwardIndex;
     }
 
+    public void setForwardIndexTitle(Hashtable<String, ArrayList<Integer>> forwardIndexTitle) {
+        this.forwardIndexTitle = forwardIndexTitle;
+    }
+
     @Override
     public String toString() {
         String result = "";
@@ -120,6 +129,14 @@ public class Page implements Serializable {
         if (!forwardIndex.isEmpty()) {
             for (String word : forwardIndex.keySet()) {
                 result += "\"" + word + "\"" + ": " + forwardIndex.get(word).toString() + ", ";
+            }
+        }
+        result += "]\n";
+
+        result += "Forward Index Title: [";
+        if (!forwardIndexTitle.isEmpty()) {
+            for (String word : forwardIndexTitle.keySet()) {
+                result += "\"" + word + "\"" + ": " + forwardIndexTitle.get(word).toString() + ", ";
             }
         }
         result += "]\n";
