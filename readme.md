@@ -1,9 +1,14 @@
 # COMP4321 README
 
-The project is developed in Java on IntelliJ.
+## Installation and Getting Started
 
-### Dependencies
-On IntelliJ, do to File > Project Structure > Project Settings > Libraries > add the 
+The backend of project is developed in Java on IntelliJ.
+
+### Backend
+
+#### Dependencies
+
+On IntelliJ, do to File > Project Structure > Project Settings > Libraries > add the
 directory of this project's *utils* folder.
 
 * `utils/htmlparser.jar`
@@ -11,10 +16,14 @@ directory of this project's *utils* folder.
 * `utils/Porter.java`
 * `utils/stopwords.txt`
 
-### Running the Project
+#### Running
 
-In `TestClass.java`, run
+In `Server.java`, run
 
-* `testMain()`: to crawl data from webpages given a starting URL, and indexes all fetched webpages.
-* `testOutputPagesToTxt()`: to output entries from *pages* database to `./output/spider_results.txt` file.
-* `testOutputInvIndexToTxt()`: to output entries from *inverted_index* database to `./output/indexer_body_results.txt` file.
+* `main()`: to start the server at port 8000 and accepts HTTP requests from the frontend.
+
+### Frontend
+
+* `cd client`: go to *client* directory
+* `npm i`: install dependencies
+* `npm start`: start frontend at port 3000.
