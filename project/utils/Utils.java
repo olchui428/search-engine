@@ -1,10 +1,42 @@
 package project;
 
+import project.utils.Porter;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Utils {
+    private static Porter porter = new Porter();
+
+    public static ArrayList<String> removeStopWords(ArrayList<String> body) {
+        HashSet<String> stopWords = new HashSet<>();
+        try {
+            File file = new File("project/utils/stopwords.txt");
+            BufferedReader br = new BufferedReader(new FileReader(file));
+            String st;
+            while ((st = br.readLine()) != null) {
+                stopWords.add(st);
+            }
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
+        body.removeAll(stopWords);
+        return body;
+    }
+
+    public static ArrayList<String> stem(ArrayList<String> body) {
+        ArrayList<String> result = new ArrayList<>();
+        for (String token : body) {
+            result.add(porter.stripAffixes(token));
+        }
+        return result;
+    }
+
     static public double CosSim(double weight, Page page, Hashtable<String, Integer> queryIndex) {
         int numWord = page.getPageSize();
 
@@ -54,8 +86,8 @@ public class Utils {
                 query.add(s);
             }
         }
-        query = Indexer.removeStopWords(query);
-        query = Indexer.stem(query);
+        query = Utils.removeStopWords(query);
+        query = Utils.stem(query);
         query.removeAll(Arrays.asList("", null));
 
         phraseNormal.add(queryPhrase);

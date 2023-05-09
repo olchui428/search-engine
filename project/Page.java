@@ -19,7 +19,6 @@ public class Page implements Serializable {
     private HashSet<URL> parentLinks = new HashSet<>();
     private Hashtable<String, ArrayList<Integer>> forwardIndex = new Hashtable(); // word -> positions
     private Hashtable<String, ArrayList<Integer>> forwardIndexTitle = new Hashtable(); // word -> positions
-    // TODO: map wordId instead of word
 
     // Constructor
     public Page(URL url) {

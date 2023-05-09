@@ -24,7 +24,7 @@ import {
 
 import _ from 'lodash';
 
-const STEP = 2;
+const STEP = 10;
 
 const SearchEngine = () => {
   const QUERY_API = 'http://localhost:8000/query';
@@ -83,9 +83,10 @@ const SearchEngine = () => {
     setNumResult(value);
   };
 
-  // useEffect(() => {
-  //   console.log('keyword>>>', keyword);
-  // }, [keyword]);
+  useEffect(() => {
+    console.log('keyword>>>', keyword);
+    console.log('data.length>>>', data.length);
+  }, [keyword, data]);
 
   const formatDate = (timestamp) => {
     const d = new Date(timestamp * 1000);
@@ -289,6 +290,10 @@ const SearchEngine = () => {
           onChange={onChangeNumber}
         />
       </div>
+
+      <Text>
+        Number of search results: {data.length}
+      </Text>
 
       <List
         className="demo-loadmore-list"

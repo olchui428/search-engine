@@ -10,13 +10,15 @@ import jdbm.helper.FastIterator;
 import org.junit.Test;
 import project.utils.Porter;
 import jdbm.htree.HTree;
+import project.Utils;
+
+import static project.Utils.stem;
 
 public class Indexer {
 
     private Hashtable<String, Term> invertedFileTitle = new Hashtable();
     private Hashtable<String, Term> invertedFileBody = new Hashtable();
     private Hashtable<String, String> termToID = new Hashtable(); // word to word_id
-    private static Porter porter = new Porter();
     private DatabaseManager recmanInvTitle;
     private DatabaseManager recmanInvBody;
     private DatabaseManager recmanTermToId;
@@ -52,8 +54,8 @@ public class Indexer {
 
                 // Body
                 ArrayList<String> body = page.getBody();
-                body = removeStopWords(body);
-                body = stem(body);
+                body = Utils.removeStopWords(body);
+                body = Utils.stem(body);
                 indexing(body, pageId, true);
 
                 // Title
@@ -63,8 +65,8 @@ public class Indexer {
                 while (st.hasMoreTokens()) {
                     title.add(st.nextToken());
                 }
-                title = removeStopWords(title);
-                title = stem(title);
+                title = Utils.removeStopWords(title);
+                title = Utils.stem(title);
                 indexing(title, pageId, false);
             }
 
@@ -81,30 +83,6 @@ public class Indexer {
         System.out.println("Indexing completed");
     }
 
-    public static ArrayList<String> removeStopWords(ArrayList<String> body) {
-        HashSet<String> stopWords = new HashSet<>();
-        try {
-            File file = new File("project/utils/stopwords.txt");
-            BufferedReader br = new BufferedReader(new FileReader(file));
-            String st;
-            while ((st = br.readLine()) != null) {
-                stopWords.add(st);
-            }
-        } catch (IOException e) {
-            System.out.println(e.getMessage());
-        }
-        body.removeAll(stopWords);
-        return body;
-    }
-
-    public static ArrayList<String> stem(ArrayList<String> body) {
-        ArrayList<String> result = new ArrayList<>();
-        for (String token : body) {
-            result.add(porter.stripAffixes(token));
-        }
-        return result;
-    }
-
     private void indexing(ArrayList<String> stringArrayList, String pageId, boolean isBody) throws IOException {
         // Body
         if (isBody) {
@@ -113,7 +91,6 @@ public class Indexer {
             Hashtable<String, ArrayList<Integer>> forwardIndex = new Hashtable<>(); // word -> positions of word in page
             int position = 0;
             for (String str : stringArrayList) {
-//                ArrayList<Integer> positions;
                 // Term already exists in forwardIndex
                 if (forwardIndex.get(str) != null) {
                     ArrayList<Integer> positions = forwardIndex.get(str);
