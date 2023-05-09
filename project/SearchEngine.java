@@ -153,37 +153,28 @@ public class SearchEngine {
                 docToPrevWordPosTitle.clear(); // reset
                 docToPrevWordPosTitle = docToThisWordPosTitle;
             }
-//            System.out.println("docToPrevWordPos = " + docToPrevWordPos);
 
             // Compute Title weight (weight of doc += pf * idfP * TITLE_BONUS / maxPf)
             double dfTitle = docToPrevWordPosTitle.keySet().size();
-//            System.out.println("docToPrevWordPosTitle = " + docToPrevWordPosTitle);
             double maxPfTitle = 0;
             for (String pageID : docToPrevWordPosTitle.keySet()) {
                 maxPfTitle = Math.max(maxPfTitle, docToPrevWordPosTitle.get(pageID).size());
             }
-//            System.out.println("maxPfTitle = " + maxPfTitle);
             for (String pageID : docToPrevWordPosTitle.keySet()) {
-//                System.out.println("Title = " + ((Page) recmanPages.get(pageID)).getTitle());
                 double pf = docToPrevWordPosTitle.get(pageID).size();
-//                System.out.println("pf = " + pf);
                 double idfP = Math.log(NUM_PAGES / dfTitle) / Math.log(2);
-//                System.out.println("idfP = " + idfP);
                 if (maxPfTitle == 0) {
                     continue;
                 }
                 double weight = pf * idfP * TITLE_BONUS / maxPfTitle;
-//                System.out.println("weight = " + weight);
 
                 // Update numerator (Sum of d_ik)
                 Double numeratorOld = docNumeratorMap.get(pageID);
-//                System.out.println("numeratorOld = " + numeratorOld);
                 if (numeratorOld == null) {
                     docNumeratorMap.put(pageID, weight);
                 } else {
                     docNumeratorMap.put(pageID, numeratorOld + weight);
                 }
-//                System.out.println("numeratorNew = " + docNumeratorMap.get(pageID));
             }
 
             // Compute Body weight (weight of doc += pf * idfP / maxPf)
@@ -192,32 +183,22 @@ public class SearchEngine {
             for (String pageID : docToPrevWordPos.keySet()) {
                 maxPf = Math.max(maxPf, docToPrevWordPos.get(pageID).size());
             }
-//            System.out.println("Compute Body weight>>>");
-//            System.out.println("maxPf = " + maxPf);
             for (String pageID : docToPrevWordPos.keySet()) {
-//                System.out.println("Title = " + ((Page) recmanPages.get(pageID)).getTitle());
                 double pf = docToPrevWordPos.get(pageID).size();
-//                System.out.println("pf = " + pf);
                 double idfP = Math.log(NUM_PAGES / df) / Math.log(2);
-//                System.out.println("idfP = " + idfP);
                 if (maxPf == 0) {
                     continue;
                 }
                 double weight = pf * idfP / maxPf;
-//                System.out.println("weight = " + weight);
 
                 // Update numerator (Sum of d_ik)
                 Double numeratorOld = docNumeratorMap.get(pageID);
-//                System.out.println("numeratorOld = " + numeratorOld);
                 if (numeratorOld == null) {
                     docNumeratorMap.put(pageID, weight);
                 } else {
                     docNumeratorMap.put(pageID, numeratorOld + weight);
                 }
-//                System.out.println("numeratorNew = " + docNumeratorMap.get(pageID));
             }
-
-//            System.out.println("docNumeratorMap = " + docNumeratorMap);
         }
 
         // ----- Normal Search -----
@@ -299,7 +280,6 @@ public class SearchEngine {
                     } else {
                         docNumeratorMap.put(pageID, numeratorOld + numerator);
                     }
-//                    System.out.println("sumWeight = " + sumWeight + "/// page.getBody() = " + page.getBody());
                 }
             }
         }
@@ -313,20 +293,10 @@ public class SearchEngine {
             Page page = (Page) recmanPages.get(pageID);
             double score = Utils.CosSim(docWeight, page, queryIndex);
             System.out.printf("score:%.2f, page:%s \n", score * 1000, page.getTitle());
-
             cosSimMap.put(pageID, score);    // put inside a score map
         }
 
         Map<String, Double> sortedScoreMap = Utils.sortMapDesc(cosSimMap); // PageID -> score
-
-        // DEBUG
-//        for (Map.Entry<String, Double> entry : sortedScoreMap.entrySet()) {
-//            String pageID = entry.getKey();
-//            Page page = (Page) recmanPages.get(pageID);
-//            double score = entry.getValue();
-//            System.out.printf("score:%.2f, page:%s\n", score * 1000, page.getBody());
-//        }
-
         return sortedScoreMap;
     }
 }

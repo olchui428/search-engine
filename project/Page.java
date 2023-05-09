@@ -124,7 +124,6 @@ public class Page implements Serializable {
         result += "Size of page: " + pageSize + "\n";
         result += "Body: " + body.toString() + "\n";
 
-//        result += "Forward Index length: " + forwardIndex.size() + "\n";
         result += "Forward Index: [";
         if (!forwardIndex.isEmpty()) {
             for (String word : forwardIndex.keySet()) {

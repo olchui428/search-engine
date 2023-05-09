@@ -20,7 +20,7 @@ import project.Utils;
 import static java.lang.Integer.parseInt;
 
 public class Server {
-    static public int NUM_PAGES = 30;
+    static public int NUM_PAGES = 300;
 
     public static void main(String[] args) throws Exception {
         HttpServer server = HttpServer.create(new InetSocketAddress(8000), 0);
@@ -111,10 +111,6 @@ public class Server {
 
             SearchEngine searchEngine = new SearchEngine(query, NUM_PAGES, recmanPages, recmanInvTitle, recmanInvBody);
             Map<String, Double> results = searchEngine.start();
-//             DEBUG
-//            for (String s : results.keySet()) {
-//                System.out.println(s + ": " + results.get(s));
-//            }
 
             // JSON
             JSONArray list = new JSONArray();
@@ -143,11 +139,8 @@ public class Server {
                 for (String word : forwardPositions.keySet()) {
                     forwardIndex.put(word, forwardPositions.get(word).size());
                 }
-//                Map<String, Integer> forwardIndex = Utils.sortMapDesc(forwardIndex);
-//                Map<String, Integer> forwardIndex = project.Utils.sortMapDesc(page.getForwardIndex());
                 JSONArray forwardIndexJson = new JSONArray();
                 for (String word : Utils.sortMapDesc(forwardIndex).keySet()) {
-//                    System.out.println("word = " + word + ", tf = " + forwardIndex.get(word));
                     JSONObject wordToTf = new JSONObject();
                     wordToTf.put("word", word);
                     wordToTf.put("tf", forwardIndex.get(word));

@@ -18,7 +18,8 @@ public class TestClass {
 
     @Test
     public void testSpiderIndexer() {
-        String testingURL = "https://cse.hkust.edu.hk/";
+//        String testingURL = "https://cse.hkust.edu.hk/";
+        String testingURL = "https://www.cse.ust.hk/~kwtleung/COMP4321/testpage.htm";
         int numPages = 300;
 
         DatabaseManager recmanPages, recmanUrlToId, recmanInvTitle, recmanInvBody, recmanTermToId;
@@ -103,47 +104,6 @@ public class TestClass {
         for (String s : result.keySet()) {
             System.out.println(((Page) recmanPages.get(s)).getTitle() + ": " + result.get(s));
         }
-//        inputQuery =
-//        ArrayList<String> queryPhrase = new ArrayList<>();
-//        ArrayList<String> query = new ArrayList<>();
-//        Stack<String> quotes = new Stack<>();
-//        String phraseTemp = "";
-//        for (String word : inputQuery.split("")) {
-//            System.out.println(">>> word = " + word);
-//            if (word.contains("\"")) {
-//                if () {
-//                } else if (quotes.isEmpty()) {
-//                    System.out.println(1);
-//                    quotes.push("\"");
-//                    phraseTemp = phraseTemp.concat(word.replace("\"", ""));
-//                } else {
-//                    System.out.println(2);
-//                    quotes.pop();
-//                    if (!word.equals("\"")) {
-//                        System.out.println(2.1);
-//                        phraseTemp = phraseTemp == "" ? phraseTemp.concat(word.replace("\"", "").replace(" ", "")) : phraseTemp.concat(" " + word.replace("\"", "").replace(" ", ""));
-//                    }
-//                    queryPhrase.add(phraseTemp);
-//                    phraseTemp = "";
-//                }
-//            } else {
-//                if (quotes.isEmpty()) {
-//                    System.out.println(3);
-//
-//                    query.add(word);
-//                } else {
-//                    System.out.println(4);
-//                    phraseTemp = phraseTemp == "" ? phraseTemp.concat(word.replace("\"", "").replace(" ", "")) : phraseTemp.concat(" " + word.replace("\"", "").replace(" ", ""));
-//                }
-//            }
-//            System.out.println("query = " + query);
-//            System.out.println("queryPhrase = " + queryPhrase);
-//
-//        }
-//        System.out.println("query = " + query);
-//        System.out.println("queryPhrase = " + queryPhrase);
-
-
     }
 
     static public void testOutputToTxt(TableName tableName, String filepath) {

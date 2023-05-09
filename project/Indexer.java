@@ -13,7 +13,6 @@ import jdbm.htree.HTree;
 
 public class Indexer {
 
-    //    private HashSet<String> stopWords = new HashSet<>();
     private Hashtable<String, Term> invertedFileTitle = new Hashtable();
     private Hashtable<String, Term> invertedFileBody = new Hashtable();
     private Hashtable<String, String> termToID = new Hashtable(); // word to word_id
@@ -178,13 +177,11 @@ public class Indexer {
                     forwardIndex.put(str, positions);
                 }
                 position++;
-//                System.out.println("str = " + str + ", position = " + position);
             }
 
             // Update forwardIndex of page (for body only)
             Page page = (Page) recmanPages.getDb().get(pageId);
             page.setForwardIndexTitle(forwardIndex);
-            System.out.println("forwardIndexTitle = " + forwardIndex);
             recmanPages.update(pageId, page);
 
             // Update invertedFileTitle and termToID

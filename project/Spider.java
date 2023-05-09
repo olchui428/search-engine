@@ -88,14 +88,6 @@ public class Spider {
             recmanPages.update(newPageId, newPage);
             recmanUrlToId.update(url.toString(), newPageId);
 
-            // Checking if the Page has been stored in db already
-//            Page getPage = (Page) recmanPages.getPage(url);
-////            System.out.println("Stored in db:");
-//            System.out.println(getPage.toString());
-//            System.out.println("---------");
-//            if (getPage == null) {
-//                new IOException(url + " not stored in database.");
-//            }
             numFetchedPages++;
 
             // Adding childlinks for further fetching
@@ -118,13 +110,6 @@ public class Spider {
         }
 
         System.out.println("Fetching completed");
-
-        // DEBUG
-//        System.out.println("Fetched urls: ");
-//        for (URL hyperlink : hyperlinks) {
-//            Page getPage = (Page) recmanPages.getPage(hyperlink);
-//            System.out.println(getPage.toString());
-//        }
     }
 
     // extractPageSize(URL)
