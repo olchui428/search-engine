@@ -110,7 +110,7 @@ public class Server {
             recmanInvBody.linkDatabase();
 
             SearchEngine searchEngine = new SearchEngine(query, NUM_PAGES, recmanPages, recmanInvTitle, recmanInvBody);
-            Map<String, Double> results = searchEngine.start(query);
+            Map<String, Double> results = searchEngine.start();
 //             DEBUG
 //            for (String s : results.keySet()) {
 //                System.out.println(s + ": " + results.get(s));

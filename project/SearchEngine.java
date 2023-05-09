@@ -17,7 +17,7 @@ import project.Utils;
 
 public class SearchEngine {
     public int NUM_PAGES = 300;
-    public double TITLE_BONUS = 1.2;
+    public double TITLE_BONUS = 1.05;
 
     private DatabaseManager recmanPages;
     private DatabaseManager recmanInvTitle;
@@ -27,45 +27,24 @@ public class SearchEngine {
     private int numResult;
 
 
-    protected SearchEngine(String query, int numResult, DatabaseManager recmanPages, DatabaseManager recmanInvTitle, DatabaseManager recmanInvBody) {
+    protected SearchEngine(String inputQuery, int numResult, DatabaseManager recmanPages, DatabaseManager recmanInvTitle, DatabaseManager recmanInvBody) {
         this.recmanPages = recmanPages;
         this.recmanInvTitle = recmanInvTitle;
         this.recmanInvBody = recmanInvBody;
-        this.query = new ArrayList<String>(Arrays.asList(query.split(" ")));
-        this.queryPhrase = new ArrayList<>();
+
+        // ===== Process inputQuery =====
+        ArrayList<ArrayList<String>> phraseNormal = Utils.splitQueryPhraseNormal(inputQuery);
+        this.queryPhrase = phraseNormal.get(0);
+        System.out.println("queryPhrase = " + queryPhrase);
+        this.query = phraseNormal.get(1);
+        System.out.println("query = " + query);
+
         this.numResult = numResult;
     }
 
-    public Map<String, Double> start(String inputQuery) throws IOException {
+    public Map<String, Double> start() throws IOException {
         DatabaseManager recmanTermToId = new DatabaseManager(TableName.TERM_TO_ID);
         recmanTermToId.linkDatabase();
-
-        // ----- Process inputQuery -----
-
-        // Phrase query
-        System.out.println("Phrases...");
-        Pattern p = Pattern.compile("\"([^\"]*)\"");
-        Matcher m = p.matcher(inputQuery);
-        while (m.find()) {
-            String phrase = m.group(1);
-            queryPhrase.add(phrase);
-            System.out.println(phrase);
-            inputQuery = inputQuery.replace(phrase, "");
-        }
-
-        // Normal query (ignore phrase search)
-        System.out.println("Normal queries...");
-        StringTokenizer st = new StringTokenizer(inputQuery);
-        ArrayList<String> query = new ArrayList<>();
-        while (st.hasMoreTokens()) {
-            String s = st.nextToken();
-            if (!s.equals("\"")) {
-                query.add(s);
-            }
-        }
-        query = Indexer.removeStopWords(query);
-        query = Indexer.stem(query);
-        System.out.println("StopStemmed query: " + query);
 
         // Processing query
         Hashtable<String, Integer> queryIndex = new Hashtable<>(); // word -> tf in query
@@ -79,9 +58,7 @@ public class SearchEngine {
             }
         }
 
-        // ----- Ranking -----
-
-        // Compute numerator (for cosine similarity) for each document
+        // ===== Ranking =====
 
         Map<String, Double> docNumeratorMap = new HashMap<>(); // PageId -> weight
         Map<String, Double> cosSimMap = new HashMap<>(); // PageId -> cosine similarity
@@ -245,6 +222,7 @@ public class SearchEngine {
 
         // ----- Normal Search -----
 
+
         for (String q : queryIndex.keySet()) {
             System.out.println("Calculating " + q);
             String wordID = (String) recmanTermToId.get(q);
@@ -333,7 +311,7 @@ public class SearchEngine {
             String pageID = entry.getKey();
             double docWeight = entry.getValue();
             Page page = (Page) recmanPages.get(pageID);
-            double score = Utils.CosSim(docWeight, page, query);
+            double score = Utils.CosSim(docWeight, page, queryIndex);
             System.out.printf("score:%.2f, page:%s \n", score * 1000, page.getTitle());
 
             cosSimMap.put(pageID, score);    // put inside a score map
