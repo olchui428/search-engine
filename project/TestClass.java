@@ -61,9 +61,7 @@ public class TestClass {
 
     @Test
     public void testSearchEngine() throws IOException {
-//        String query = """
-//                To make the Robo-lawyer more like a real person, sentiment analysis has been employed to help identify true feelings and moods of a person heading to a divorce through the dialogue. When a user writes "I am glad", for instance, it should be interpreted as an expression of relief instead of being upbeat. It even makes effort to persuade couples to think twice before finally deciding to divorce. """;
-        String query = "hkust";
+        String query = "\"cold harvest \" playing movie";
         int numPages = 30;
 
         DatabaseManager recmanPages = new DatabaseManager(TableName.PAGES);
@@ -77,9 +75,9 @@ public class TestClass {
 
         SearchEngine retriever = new SearchEngine(query, numPages, recmanPages, recmanInvTitle, recmanInvBody);
         Map<String, Double> result = retriever.start();
-        for (String s : result.keySet()) {
-            System.out.println(((Page) recmanPages.get(s)).getTitle() + ": " + result.get(s));
-        }
+//        for (String s : result.keySet()) {
+//            System.out.println(((Page) recmanPages.get(s)).getTitle() + ": " + result.get(s));
+//        }
     }
 
     static public void testOutputToTxt(TableName tableName, String filepath) {

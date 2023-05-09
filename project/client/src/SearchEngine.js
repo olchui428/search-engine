@@ -63,13 +63,15 @@ const SearchEngine = () => {
 
   const onClickKeyword = async (word) => {
     window.scrollTo(0, 0);
+    setNumResultShow(STEP);
     setKeyword(word);
     setLoading(true);
     const fetchData = await axios.get(`${QUERY_API}?query=${word}`, {
       params: { numPages: numResult }
     });
     console.log(fetchData.data);
-    setResult(fetchData.data);
+    setData(fetchData.data);
+    setResult(fetchData.data.slice(0, STEP));
     setLoading(false);
   };
 

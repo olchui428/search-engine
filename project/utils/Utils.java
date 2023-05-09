@@ -58,7 +58,12 @@ public class Utils {
 
         double dotProduct = weight;
 //        System.out.println("dotProduct = " + dotProduct);
-        double score = dotProduct / (documentLength * queryLength);
+        double score = 0;
+        if (documentLength != 0 && queryLength != 0) {
+            score = dotProduct / (documentLength * queryLength);
+        } else {
+            score = dotProduct;
+        }
 //        System.out.println("score = " + score);
         return score;
     }

@@ -285,18 +285,24 @@ public class SearchEngine {
         }
 
         // Compute cosine similarity score
-        System.out.println();
-        System.out.println("COS similarity>>>>");
+//        System.out.println();
+//        System.out.println("COS similarity>>>>");
         for (Map.Entry<String, Double> entry : docNumeratorMap.entrySet()) {
             String pageID = entry.getKey();
             double docWeight = entry.getValue();
             Page page = (Page) recmanPages.get(pageID);
             double score = Utils.CosSim(docWeight, page, queryIndex);
-            System.out.printf("score:%.2f, page:%s \n", score * 1000, page.getTitle());
+//            System.out.printf("score:%.2f, page:%s \n", score * 1000, page.getTitle());
             cosSimMap.put(pageID, score);    // put inside a score map
         }
 
         Map<String, Double> sortedScoreMap = Utils.sortMapDesc(cosSimMap); // PageID -> score
+
+        // DEBUG
+        for (String s : sortedScoreMap.keySet()) {
+            System.out.println(sortedScoreMap.get(s) + ": " + ((Page) recmanPages.get(s)).getTitle());
+        }
+
         return sortedScoreMap;
     }
 }
